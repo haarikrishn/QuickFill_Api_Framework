@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuickFill API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">QuickFill - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 25, 2024 11:47:08 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create Priceboard Task without priceBoard in priceBoards field from v3 endpoint</p>
+            <p class="text-sm">
+              <span>11:47:08 AM</span> / <span>00:00:03:918</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create Priceboard Task without priceBoard in priceBoards field from v3 endpoint</h5>
+<span class='badge badge-success'>03.25.2024 11:47:08 AM</span>
+<span class='badge badge-danger'>03.25.2024 11:47:12 AM</span>
+<span class='badge badge-default'>00:00:03:918</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:08 AM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:08 AM</td>
+        <td>
+          Get the unique requestId to create Priceboard Task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:08 AM</td>
+        <td>
+          Get the requestAt time to created Priceboard Task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:08 AM</td>
+        <td>
+          Provide only pbStatus or priceboard in priceBoards for a Priceboard task to be created from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:08 AM</td>
+        <td>
+          Provide article details to create Priceboard task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:08 AM</td>
+        <td>
+          Give requester comments for a Priceboard task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:08 AM</td>
+        <td>
+          Give task type for a new task to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:08 AM</td>
+        <td>
+          Requester call the Create Task v3 endpoint to create Priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:09 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:09 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=6789014, password=Dmart@12345]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:11 AM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:11 AM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJERUxJVkVSWSBQTEFOTkVSIiwiRElTUEFUQ0hFUiBQTEFOTkVSIiwiRElTUEFUQ0hFUiIsIlBJQ0sgUExBTk5FUiIsIlBJQ0tFUiIsIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMzgzMCwiaWF0IjoxNzExMzQ3NDMwLCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6ImM0MTU2ZGY3LWNmZjEtNDQ5Ny1iYzM3LTViNjBjZDUwYmNmZCJ9.ksIUzBw9dESVcxodtavVOjRPTB_UEFPmm1xlQsP0lnHKxKNXbg3vzCd8t56NJGte_GLcYjOA8Jw-jqCyZhP5RrZ8IM0Xmq_xRr7NKcxBOLbppciQcpNt8md3iYjN0VuGuscsqaymtUPaDkfc1VWTn3vzqDHbCG8iCVKSLK_EuYOe9yM0xYqIeyD7D1Ib2aAFsilHU_o-7dwYihOdMRGKcVQBt4-LU7xI2x0TJbD-HtigfVXVTnfQbiARST5XXigStJyLISOr0ohSaaz1Sw51TBcwOYnDNhJDysFsdLf7Sx3ogSEAbtN7m6dhe4lWqXFuLKUWoAENnPCc29Jzp2c_KA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTE1MjAyMzAsImlhdCI6MTcxMTM0NzQzMCwidXNlciI6IjY3ODkwMTQiLCJqdGkiOiI1YzIyMDk5ZS0wMzEwLTQyMTItYTRkYy0zNTczZTUyNGFmN2MifQ.imRpOVlKmEvtyGq3ox5CX-gGsC0q_pTxeeQJWmsawsqP8AVKHdWYsQ2iE_TUcfGn_gegM-Le4xGajzZyFisC3yzy_z2bpLk2EdAXqDkuS4pGA5anAoccWA1K13PdhCSXsFcie82TClizEQnKG-owE71jc1j8kX3BHL0Qe2p4q31p1drWDqxQFhyoX_S2nSjDCK7xDJTeDbD3qQywBlU_cQUgKnZxr78SLze5g7vSQb7zlMAu0brGyA72kFgrsY3sUGx2i_XYugp9T0YM7sp6xhxqgfrzwIK5Evq8nJX-LozfPzmVSPV-7UITu2QwFmoJVMzwX_FwroevBTKrZDNnQA"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:11 AM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJERUxJVkVSWSBQTEFOTkVSIiwiRElTUEFUQ0hFUiBQTEFOTkVSIiwiRElTUEFUQ0hFUiIsIlBJQ0sgUExBTk5FUiIsIlBJQ0tFUiIsIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMzgzMCwiaWF0IjoxNzExMzQ3NDMwLCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6ImM0MTU2ZGY3LWNmZjEtNDQ5Ny1iYzM3LTViNjBjZDUwYmNmZCJ9.ksIUzBw9dESVcxodtavVOjRPTB_UEFPmm1xlQsP0lnHKxKNXbg3vzCd8t56NJGte_GLcYjOA8Jw-jqCyZhP5RrZ8IM0Xmq_xRr7NKcxBOLbppciQcpNt8md3iYjN0VuGuscsqaymtUPaDkfc1VWTn3vzqDHbCG8iCVKSLK_EuYOe9yM0xYqIeyD7D1Ib2aAFsilHU_o-7dwYihOdMRGKcVQBt4-LU7xI2x0TJbD-HtigfVXVTnfQbiARST5XXigStJyLISOr0ohSaaz1Sw51TBcwOYnDNhJDysFsdLf7Sx3ogSEAbtN7m6dhe4lWqXFuLKUWoAENnPCc29Jzp2c_KA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"refills":[{"requestId":"878d310f-5334-4bd2-a89c-f4a77cc1c4b8","requestedAt":"2024-03-25T06:17:08.899Z","priceBoards":[{"pbStatus":"false"},{"pbStatus":"false"}],"articleDetails":{"articleName":"Dabur Orange Glucoplus-C Jar(400g)","articlePrice":"800","ean":"8901207020001","categoryCode":"4","articleCode":"400020723","articleMrp":"790"},"requesterComments":"Testing the priceboard task","taskType":"PRICE BOARD"}]}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          Status Code for newly created Priceboard Task is : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          Create Priceboard Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "code": "QF400",
+    "msg": "Bad Request"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          Response Time for newly created Priceboard Task is : 384 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          Verify that status code be equal to 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          verify that status code be equal to 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:47:12 AM</td>
+        <td>
+          Expected Status Code is 400 and the Actual Status Code is 400
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 25, 2024 11:47:08 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 25, 2024 11:47:12 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='4%'><b>1</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>24</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create Priceboard Task without priceBoard in priceBoards field from v3 endpoint":3.918
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 1,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 24
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

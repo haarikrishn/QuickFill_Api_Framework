@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "SiteId": {
+      "type": "string"
+    },
+    "requestId": {
+      "type": "string"
+    },
+    "refillId": {
+      "type": "string"
+    },
+    "floorWalkId": {
+      "type": "string"
+    },
+    "taskType": {
+      "type": "string"
+    },
+    "articleDetails": {
+      "type": "object",
+      "properties": {
+        "ean": {
+          "type": "string"
+        },
+        "articleCode": {
+          "type": "string"
+        },
+        "articleName": {
+          "type": "string"
+        },
+        "articlePrice": {
+          "type": "string"
+        },
+        "articleMrp": {
+          "type": "string"
+        },
+        "categoryCode": {
+          "type": "string"
+        },
+        "uom": {
+          "type": "string"
+        },
+        "caselot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ean",
+        "articleCode",
+        "articleName",
+        "articlePrice",
+        "articleMrp",
+        "categoryCode",
+        "uom",
+        "caselot"
+      ]
+    },
+    "requester": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "requestedAt": {
+      "type": "string"
+    },
+    "requestedQuantity": {
+      "type": "integer"
+    },
+    "requesterComments": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "SiteId",
+    "requestId",
+    "refillId",
+    "floorWalkId",
+    "taskType",
+    "articleDetails",
+    "requester",
+    "Status",
+    "requestedAt",
+    "requestedQuantity"
+  ]
+}

@@ -1,0 +1,981 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuickFill API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">QuickFill - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 10, 2024 06:22:03 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create OTHERS Task with all the mandatory fields and valid data from v1 endpoint</p>
+            <p class="text-sm">
+              <span>6:22:03 PM</span> / <span>00:00:05:365</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Create OTHERS Task with all the mandatory fields and valid data from v1 endpoint</h5>
+<span class='badge badge-success'>04.10.2024 6:22:03 PM</span>
+<span class='badge badge-danger'>04.10.2024 6:22:09 PM</span>
+<span class='badge badge-default'>00:00:05:365</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Get the unique requestId to create Others Task from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Get the requestAt time to created Others Task from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Provide article details to create Others task from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Give comments for a Others task to be created from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Give task type for a new task to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Requester call the Create Task v1 endpoint to create Others task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:04 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=6789014, password=Dmart@12345]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:07 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:07 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJERUxJVkVSWSBQTEFOTkVSIiwiRElTUEFUQ0hFUiBQTEFOTkVSIiwiRElTUEFUQ0hFUiIsIlBJQ0sgUExBTk5FUiIsIlBJQ0tFUiIsIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMjgzOTkyNywiaWF0IjoxNzEyNzUzNTI3LCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6IjhkYTk1MGJmLWE1OTctNGM5Ny05ZmU1LWU4MDUxYTMyYWUyZSJ9.Hif9EFEDBM7dmrdzvZ0JFxfaCtEQgyoyrkqCSjZD-repyI6rOnW3ygK5kht5_AHj7QEwRP3f42mRQLg3_yzCKmGV-sopbqX6rJH4RtpQx_hmCKLCzvj06rcg4BGK0lbSyvaN12Rc9ao5JsteLKy-YGTx10MmqpDeNjk1UCR1XiNlb3RDr4OsCtksDlCsdS8Bd9mtlbyvmwX1upn_ezHB1fQkU1eKkNJU4qVFedBTcZ4X0wa0I2pfp6JHzZJc5eQznamHTj0RvFZlW37uEZIjBXfrFKBekFSZqXwpLKrD21iR2-QRIyvJ8zc0-Bvmnr7-ZZOqWHbrnESqndb-GjGkng",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTI5MjYzMjcsImlhdCI6MTcxMjc1MzUyNywidXNlciI6IjY3ODkwMTQiLCJqdGkiOiI5MTQwYjkzNi1kYWJjLTRlMTYtODY2MS1kZTEyYjM0MTZhZGMifQ.j1oeloWRRTd7egE5J26gyNKmKPW8s3vMYaen8TyqOtd1pWLC670lP_chQLimfRPmmzSRxFre7iddeR2lXFnLh9ob6-eLwIMw1_ZcQZYx4Fa3bSy1XsisCKR-YeBXzuRdKTM-xcrnYCdvhNz-KysDzzGDfOjt7Tdjgahv7NRzCRdBdLLNiQkBYaKbQbVk8ti_niT3eLwzQQFxZ4FZiVthKlBdeEcmZYwbgipi_LYlTYuR2Raat-Ji-knjVX6fuoP7T0qwqQSV33BBMAVq7FowaObxsSskY4ayW9OMDBTpXP4X2NsMfLpmdU8h-c0shzgcUrYTR0z2HxfUVBlJY4CzVg"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:07 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:08 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:08 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJERUxJVkVSWSBQTEFOTkVSIiwiRElTUEFUQ0hFUiBQTEFOTkVSIiwiRElTUEFUQ0hFUiIsIlBJQ0sgUExBTk5FUiIsIlBJQ0tFUiIsIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMjgzOTkyNywiaWF0IjoxNzEyNzUzNTI3LCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6IjhkYTk1MGJmLWE1OTctNGM5Ny05ZmU1LWU4MDUxYTMyYWUyZSJ9.Hif9EFEDBM7dmrdzvZ0JFxfaCtEQgyoyrkqCSjZD-repyI6rOnW3ygK5kht5_AHj7QEwRP3f42mRQLg3_yzCKmGV-sopbqX6rJH4RtpQx_hmCKLCzvj06rcg4BGK0lbSyvaN12Rc9ao5JsteLKy-YGTx10MmqpDeNjk1UCR1XiNlb3RDr4OsCtksDlCsdS8Bd9mtlbyvmwX1upn_ezHB1fQkU1eKkNJU4qVFedBTcZ4X0wa0I2pfp6JHzZJc5eQznamHTj0RvFZlW37uEZIjBXfrFKBekFSZqXwpLKrD21iR2-QRIyvJ8zc0-Bvmnr7-ZZOqWHbrnESqndb-GjGkng]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:08 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:08 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create([{"requestId":"e4157b98-dd30-4645-a56a-8b43e979e143","requestedAt":"2024-04-10T12:52:04.038Z","articleDetails":{"articleName":"Dabur Gulabari Pr Rose Watr (250ml)","sp":"1099","ean":"8901207040801","categoryCode":"4","articleCode":"400000995","mrp":"1080"},"requesterComments":"Testing the others task","taskType":"OTHERS"}]); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Status Code for newly created Others Task is : 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Create Others Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create([
+    {
+        "requestId": "e4157b98-dd30-4645-a56a-8b43e979e143",
+        "taskId": "d9ff53d8-6676-4675-9294-37ed6f4d4ca3",
+        "floorWalkId": "a01709b4-c36a-4cc0-b374-6451850887bd"
+    }
+]); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Response Time for newly created Others Task is : 746 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Check the response time for the Others Task created from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          <span class='badge white-text red'>Response time Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Response Time is 746 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Verify that Others Task is created successfully from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of Others Task is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Excpected requestId is e4157b98-dd30-4645-a56a-8b43e979e143 and the Actual requestId is e4157b98-dd30-4645-a56a-8b43e979e143
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update OTHERS Task by Refill Auditor with valid data from v1 endpoint</p>
+            <p class="text-sm">
+              <span>6:22:09 PM</span> / <span>00:00:01:234</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Update OTHERS Task by Refill Auditor with valid data from v1 endpoint</h5>
+<span class='badge badge-success'>04.10.2024 6:22:09 PM</span>
+<span class='badge badge-danger'>04.10.2024 6:22:10 PM</span>
+<span class='badge badge-default'>00:00:01:234</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Get the refillId to update others task from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Give the status to update the others task from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Give the comments for updating others task by auditor from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Requester calls the Update Others Task v1 endpoint to update others task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:09 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=678787, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTY5YzM0NDMwZTMzZDMzOTAzZTViZTgiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMjgzOTkzMCwiaWF0IjoxNzEyNzUzNTMwLCJ1c2VyIjoiNjc4Nzg3IiwianRpIjoiMjEwYmQ4MDAtM2Y0Yi00YzViLWI3ZDUtNWY4YzFmZTA0MTg2In0.suP_c7VT5Ss1jlPYUQiippXvnEfpWiJHlRhO0dX3waMAYLnKoF1-3PCx4fSpnijWh-xaggubRa8qMIcDm9t_T6DJkNzvNkeP82BFRDv0VLLi5WCUIAI5SCerQXKxnegkJT4GWAsE7w-yRWAQ-7RXsl-wWkzmc6K6lLTWOfPdZzQ6TFDMfuc2slht9rhdv6kEmp195sp1k19YYL1tb_Q-jzeTOt6OL15hHVbpug8arEF_tIhB7wejMNMn9eRhPKzChtETtXNCVBESyH3kUU0YCFs0L3GBaQYImdHXkDRrs43Bmtjs_bcXvEYlqFUelFcWVpZNI5mYPUxC_kUiONo_yA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTY5YzM0NDMwZTMzZDMzOTAzZTViZTgiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTI5MjYzMzAsImlhdCI6MTcxMjc1MzUzMCwidXNlciI6IjY3ODc4NyIsImp0aSI6ImJlM2QwYzkxLWVmMTktNDFjYy04OWZmLWEwYTdlNzc4OWQ4YyJ9.QjabWMhA6KfyFa19qN08HcAD6zYL1o95iNqAHOesPnrRj9166D1Ot-rpFXo71TFvQKkuU1FN_q9VHu3rIS_IjwmHB2YKZt-CEpNyFn1JpoazalQV3uXyChPlMzFQ0KyqSxk9clJBAW9dKeEBj1PoWydmerdXdkEHFr5FhMcK6s2UUjMpK1dJzBSup-RgAIoAg8Bio0BXRXzaaD_ulM4QwaI-ftNVbYy2T7RAOeFSnWa7Q8KpkTKGBcn7e8qxTl5-B7FLVJzDxrt7fj-hpTQmnCaqoVUN5OIzVoGdPGaoz-h6s0Cr5MsD0PPjNjrpXVjFKcEp8NCGOMJqH77vYrZdgQ"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTY5YzM0NDMwZTMzZDMzOTAzZTViZTgiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMjgzOTkzMCwiaWF0IjoxNzEyNzUzNTMwLCJ1c2VyIjoiNjc4Nzg3IiwianRpIjoiMjEwYmQ4MDAtM2Y0Yi00YzViLWI3ZDUtNWY4YzFmZTA0MTg2In0.suP_c7VT5Ss1jlPYUQiippXvnEfpWiJHlRhO0dX3waMAYLnKoF1-3PCx4fSpnijWh-xaggubRa8qMIcDm9t_T6DJkNzvNkeP82BFRDv0VLLi5WCUIAI5SCerQXKxnegkJT4GWAsE7w-yRWAQ-7RXsl-wWkzmc6K6lLTWOfPdZzQ6TFDMfuc2slht9rhdv6kEmp195sp1k19YYL1tb_Q-jzeTOt6OL15hHVbpug8arEF_tIhB7wejMNMn9eRhPKzChtETtXNCVBESyH3kUU0YCFs0L3GBaQYImdHXkDRrs43Bmtjs_bcXvEYlqFUelFcWVpZNI5mYPUxC_kUiONo_yA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create([{"taskId":"d9ff53d8-6676-4675-9294-37ed6f4d4ca3","Status":"VERIFIED","auditorComments":"checking the update others task functionality"}]); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Status Code for Updated Others Task is : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Update Others Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create([
+    {
+        "taskId": "d9ff53d8-6676-4675-9294-37ed6f4d4ca3",
+        "status": "VERIFIED"
+    }
+]); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Response Time for Update Others Task is : 522 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Expected Status Code is 200 and the Actual Status Code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Check the response time for the Others Task updated from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          <span class='badge white-text red'>Response time Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Response Time is 522 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Verify that others task is updated successfully by Auditor
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          <span class='badge white-text green'>taskId field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Expected taskId is d9ff53d8-6676-4675-9294-37ed6f4d4ca3 and the Actual taskId is d9ff53d8-6676-4675-9294-37ed6f4d4ca3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          <span class='badge white-text green'>status field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Expected status is VERIFIED and the Actual status is VERIFIED
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="67"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update OTHERS Task by Refiller with valid data from v1 endpoint</p>
+            <p class="text-sm">
+              <span>6:22:10 PM</span> / <span>00:00:01:159</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update OTHERS Task by Refiller with valid data from v1 endpoint</h5>
+<span class='badge badge-success'>04.10.2024 6:22:10 PM</span>
+<span class='badge badge-danger'>04.10.2024 6:22:11 PM</span>
+<span class='badge badge-default'>00:00:01:159</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Get the refillId to update others task from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Give the status to update the others task from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Give the comments for updating others task from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Requester calls the Update Others Task v1 endpoint to update others task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:10 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=797978, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMjgzOTkzMSwiaWF0IjoxNzEyNzUzNTMxLCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiNjUxODk3MGEtOTI5OS00ODM2LTgwNjEtNWQ2YWM1ODhkM2E5In0.3pcjLm6pBSX2H0x3Zsc4t0SuPgvve386eq_aQgWxuavRolRuAKSRY0oJnrKtCkfkQ7BSbIuFpZ4zX6Kpw5AgxZL5QsmVGRqouJKZ9b_qrQR96-cCAqgEu50TvT-qAxxzwLNxpMGj-u18LH-35LYA4Dqe4Rc0q8OA16KOokZJaEHWLfprULQQ8aAqpJZ0dJA-VVA2avZC0RVpw-bG07EGFOGJk9Saq1SytBZlSrUM4Cc3jjujfNt1CgAaSIXDWVBB1q7_Z6X2weeAewK5sEhoAwSB7sbymvTdVCDJYsv3toZjskvrsimKzIhfvvQa2f-36HIT45xxxOA7UfC6EDYRyQ",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTI5MjYzMzEsImlhdCI6MTcxMjc1MzUzMSwidXNlciI6Ijc5Nzk3OCIsImp0aSI6ImY1OGExOThkLTgyMzktNDI0NS04YTYyLThkY2VhYmYxMzg5YSJ9.lLBGFHMTY1GaL3piB16LT6LtGOcRigEdSdtkQ7q4XQfInaQ9LSH6EkXiFyoER8A-GZrXkYWd3fleHsUslFZV71gz0JsX4mRpGGc6aNHYaRlw-nZQr1ED_1d_ACMOcSky8gAiL0k3X19I72C3Mh842AYstaCLodgXzqoy6TFlVfA9FrhyjXlP0KI8twE9mdRg3m-xiaJhMG8k1zcYnY8018AxZL3FOG2DxOErYe69SWbZyTG6J12fQcviJ_IdTx87Wi8_6saQFYRNaLMijwOF75ldWunX1plSFU3x3AVEr2OGAiEs0wfUf6Qwo9DV8JnlFsUpQWYfnKCmtGv5T8KWag"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjE0NTM1YmVjLTJlZTMtNGRmMS1iZDhkLWFlODFkM2QwODdjMyJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMjgzOTkzMSwiaWF0IjoxNzEyNzUzNTMxLCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiNjUxODk3MGEtOTI5OS00ODM2LTgwNjEtNWQ2YWM1ODhkM2E5In0.3pcjLm6pBSX2H0x3Zsc4t0SuPgvve386eq_aQgWxuavRolRuAKSRY0oJnrKtCkfkQ7BSbIuFpZ4zX6Kpw5AgxZL5QsmVGRqouJKZ9b_qrQR96-cCAqgEu50TvT-qAxxzwLNxpMGj-u18LH-35LYA4Dqe4Rc0q8OA16KOokZJaEHWLfprULQQ8aAqpJZ0dJA-VVA2avZC0RVpw-bG07EGFOGJk9Saq1SytBZlSrUM4Cc3jjujfNt1CgAaSIXDWVBB1q7_Z6X2weeAewK5sEhoAwSB7sbymvTdVCDJYsv3toZjskvrsimKzIhfvvQa2f-36HIT45xxxOA7UfC6EDYRyQ]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create([{"taskId":"d9ff53d8-6676-4675-9294-37ed6f4d4ca3","Status":"COMPLETED","refillerComments":"checking the update others task functionality"}]); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Status Code for Updated Others Task is : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Update Others Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create([
+    {
+        "taskId": "d9ff53d8-6676-4675-9294-37ed6f4d4ca3",
+        "status": "COMPLETED"
+    }
+]); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Response Time for Update Others Task is : 497 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Expected Status Code is 200 and the Actual Status Code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Check the response time for the Others Task updated from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          <span class='badge white-text green'>Response time Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Response Time is 497 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Verify that others task is updated successfully from v1 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          <span class='badge white-text green'>taskId field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Expected taskId is d9ff53d8-6676-4675-9294-37ed6f4d4ca3 and the Actual taskId is d9ff53d8-6676-4675-9294-37ed6f4d4ca3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          <span class='badge white-text green'>status field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:22:11 PM</td>
+        <td>
+          Expected status is COMPLETED and the Actual status is COMPLETED
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 10, 2024 06:22:03 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 10, 2024 06:22:11 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='33%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='66%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='10%'><b>9</b> events passed</small></div>
+<div>
+<small data-tooltip='2%'><b>2</b> events failed,
+<b data-tooltip='%'>76</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create OTHERS Task with all the mandatory fields and valid data from v1 endpoint":5.365,"Update OTHERS Task by Refill Auditor with valid data from v1 endpoint":1.234,"Update OTHERS Task by Refiller with valid data from v1 endpoint":1.159
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 9,
+failEvents: 2,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 76
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

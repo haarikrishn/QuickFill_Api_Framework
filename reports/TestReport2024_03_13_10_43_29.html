@@ -1,0 +1,710 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuickFill API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">QuickFill - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 13, 2024 10:43:29 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create Task by employee in Refill Requester Role</p>
+            <p class="text-sm">
+              <span>10:43:29 AM</span> / <span>00:00:04:548</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Create Task by employee in Refill Requester Role</h5>
+<span class='badge badge-success'>03.13.2024 10:43:29 AM</span>
+<span class='badge badge-danger'>03.13.2024 10:43:34 AM</span>
+<span class='badge badge-default'>00:00:04:548</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:29 AM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:29 AM</td>
+        <td>
+          Get the unique requestId to create Refill Task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:29 AM</td>
+        <td>
+          Get the requestAt time to created Refill Task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:29 AM</td>
+        <td>
+          Provide article details to create Refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:29 AM</td>
+        <td>
+          Provide the quantity for a Refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:29 AM</td>
+        <td>
+          Give requester comments for a Refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:29 AM</td>
+        <td>
+          Give task type for a new task to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:29 AM</td>
+        <td>
+          Requester call the Create Task endpoint to create Refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:30 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:30 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=678910, password=Dmart@12345]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:32 AM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:32 AM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImJhMTEwNmY1LTA4ZmUtNGEyOC1hODdjLTZlNmUyMGVlYjMxNSJ9.eyJzdWIiOiI2NWYxMzU1OWIyYzk2YjMyNzhlNzliNmMiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiXSwiaXNzIjoiaHR0cHM6XC9cL3d3dy5tZXJhZG1hcnQuY29tIiwiZXhwIjoxNzEwMzkzMjExLCJpYXQiOjE3MTAzMDY4MTEsInVzZXIiOiI2Nzg5MTAiLCJqdGkiOiIzMmIwZTJjYy1jYmJmLTRmMzUtODg3Yy0yZTQ1MTRmM2I2M2UifQ.W-cIP5o4LlD0VsvUCnEVGINKBPT0B870aX_MsoFOabUkl7fRNlxPsFCG8wdum10aGkNhONYNnrIm3_GUSJ-7ML9Y9LkxX99F1uuQUcHoHRLv5Fa-FtLwKPkmx_Cms_3rPRs1VNPlNJMjrZ6jj3jYVV6lDmeKlDeq6qyC5LuyayTZQ781pQs3612dfgUOZwdWQmyD2Iyev3qSmWKwE6vOLygTxNzBYk_PFzJ0cEPrSyunHryqSY5tYb88vqNJDGeDVt_R0yW9uo2k04VxZKFkuo3945-qi3KTGgn7QfZDfOZnQN1Vc_GKwwkXl_d7OjdMZWS5yVUW-rHKPqz5j8joRw",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImJhMTEwNmY1LTA4ZmUtNGEyOC1hODdjLTZlNmUyMGVlYjMxNSJ9.eyJzdWIiOiI2NWYxMzU1OWIyYzk2YjMyNzhlNzliNmMiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTA0Nzk2MTEsImlhdCI6MTcxMDMwNjgxMSwidXNlciI6IjY3ODkxMCIsImp0aSI6ImIwNjFmOWFkLTEzMTMtNGMwMy04MzUwLWY0MzJiZDM4OTkyMCJ9.TzMX7JwmTgBMYf9-s1jQp4dnzSju3mon-gSkVKOuMfaLDSTgVGGne3j8RvirL-6J4wnO7GmB0T6eQ6sFx_FHo_L_5eMxRQdkaEqmWjdm4hB8xczEJkrD2HxCq9feuzh-J_r5tln7RITmVa-rMhjqduWY-doolgB6a21hY18vW2KRQvJk8LAH0tIVduhUECOPHJX8f7T8dE6WNGyOxuJ5iVev2t3ezntURRgMCH3ce3WpsDd4kqCvJm84DxfI0sIGpqSuq1z7a9vKL8RCZB1X0kpRMtF2DETKzobE72voN1dR7pQDV4ruY8AdYS81FnypGJuacIuOItmvegKyHAKZwg"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:32 AM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:32 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:32 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImJhMTEwNmY1LTA4ZmUtNGEyOC1hODdjLTZlNmUyMGVlYjMxNSJ9.eyJzdWIiOiI2NWYxMzU1OWIyYzk2YjMyNzhlNzliNmMiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiXSwiaXNzIjoiaHR0cHM6XC9cL3d3dy5tZXJhZG1hcnQuY29tIiwiZXhwIjoxNzEwMzkzMjExLCJpYXQiOjE3MTAzMDY4MTEsInVzZXIiOiI2Nzg5MTAiLCJqdGkiOiIzMmIwZTJjYy1jYmJmLTRmMzUtODg3Yy0yZTQ1MTRmM2I2M2UifQ.W-cIP5o4LlD0VsvUCnEVGINKBPT0B870aX_MsoFOabUkl7fRNlxPsFCG8wdum10aGkNhONYNnrIm3_GUSJ-7ML9Y9LkxX99F1uuQUcHoHRLv5Fa-FtLwKPkmx_Cms_3rPRs1VNPlNJMjrZ6jj3jYVV6lDmeKlDeq6qyC5LuyayTZQ781pQs3612dfgUOZwdWQmyD2Iyev3qSmWKwE6vOLygTxNzBYk_PFzJ0cEPrSyunHryqSY5tYb88vqNJDGeDVt_R0yW9uo2k04VxZKFkuo3945-qi3KTGgn7QfZDfOZnQN1Vc_GKwwkXl_d7OjdMZWS5yVUW-rHKPqz5j8joRw]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:32 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:32 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"requestId":"80885c9e-ad25-45d0-aa14-6c34a639d06b","requestedAt":"2024-03-13T05:13:29.7Z","articleDetails":{"articleName":"Dabur Gulabari Pr Rose Watr (250ml)","articlePrice":"1099","ean":"8901207040801","categoryCode":"4","articleCode":"400000995","articleMrp":"1080","uom":"BOXES","caselot":10},"requestedQuantity":15,"requesterComments":"Testing the refill task","taskType":"REFILL"}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Status Code for newly created Refill Task is : 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Create Refill Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "SiteId": "4017",
+    "requestId": "80885c9e-ad25-45d0-aa14-6c34a639d06b",
+    "refillId": "48e07e69-41fb-4c13-8b38-4e86f87e4849",
+    "floorWalkId": "227d6843-d55a-49e3-a021-d070612e80ed",
+    "taskType": "REFILL",
+    "articleDetails": {
+        "ean": "8901207040801",
+        "articleCode": "400000995",
+        "articleName": "Dabur Gulabari Pr Rose Watr (250ml)",
+        "articlePrice": "1099",
+        "articleMrp": "1080",
+        "categoryCode": "4",
+        "uom": "BOXES",
+        "caselot": 10
+    },
+    "requester": "65f13559b2c96b3278e79b6c",
+    "Status": "OPEN",
+    "requestedAt": "2024-03-13T05:13:29.7Z",
+    "requestedQuantity": 15,
+    "requesterComments": "Testing the refill task"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Response Time for newly created Refill Task is : 634 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Verify that Create Task schema should be equal to CreateRefillTask.json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+           Schema is pass 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Check the response time for the Refill Task created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          <span class='badge white-text red'>Response time Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Response Time is 634 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          Verify that Refill Task is created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:33 AM</td>
+        <td>
+          <span class='badge white-text green'>SiteId field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected SiteId is 4017 and the Actual SiteId is 4017
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>taskType field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected taskType is REFILL and the Actual taskType is REFILL
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          articleDetails field validation -
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>ean field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected ean is 8901207040801 and the Actual ean is 8901207040801
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>articleCode field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected articleCode is 400000995 and the Actual articleCode is 400000995
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>articleName field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected articleName is Dabur Gulabari Pr Rose Watr (250ml) and the Actual articleName is Dabur Gulabari Pr Rose Watr (250ml)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>articlePrice field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected articlePrice is 1099 and the Actual articlePrice is 1099
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>articleMrp field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected articlePrice is 1080 and the Actual articleMrp is 1080
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>categoryCode field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected categoryCode is 4 and the Actual categoryCode is 4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>uom field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected uom is BOXES and the Actual uom is BOXES
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>caselot field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected caselot is 10 and the Actual caselot is 10
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>requester field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected requester is 65f13559b2c96b3278e79b6c and the Actual requester is 65f13559b2c96b3278e79b6c
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>Status field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected Status is OPEN and the Actual requester is OPEN
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>requestedAt field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected requestedAt is 2024-03-13T05:13:29.7Z and the Actual requestedAt is 2024-03-13T05:13:29.7Z
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>requestedQuantity field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected requestedQuantity is 15 and the Actual requestedQuantity is 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          <span class='badge white-text green'>requesterComments field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:43:34 AM</td>
+        <td>
+          Expected requesterComments is Testing the refill task and the Actual requesterComments is Testing the refill task
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 13, 2024 10:43:29 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 13, 2024 10:43:34 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='25%'><b>16</b> events passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> events failed,
+<b data-tooltip='%'>45</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create Task by employee in Refill Requester Role":4.548
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 16,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 45
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

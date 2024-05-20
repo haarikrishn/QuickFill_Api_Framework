@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "IsSuccess": {
+      "type": "boolean"
+    },
+    "StatusCode": {
+      "type": "number"
+    },
+    "Message": {
+      "type": "string"
+    },
+    "Data": {
+      "type": "array",
+      "items": {}
+    },
+    "MetaData": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "IsSuccess",
+    "StatusCode",
+    "Message",
+    "Data",
+    "MetaData"
+  ]
+}

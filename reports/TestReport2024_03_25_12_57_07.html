@@ -1,0 +1,1012 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuickFill API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">QuickFill - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 25, 2024 12:57:07 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create multiple tasks with valid data</p>
+            <p class="text-sm">
+              <span>12:57:07 PM</span> / <span>00:00:06:714</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Create multiple tasks with valid data</h5>
+<span class='badge badge-success'>03.25.2024 12:57:07 PM</span>
+<span class='badge badge-danger'>03.25.2024 12:57:13 PM</span>
+<span class='badge badge-default'>00:00:06:714</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:07 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:07 PM</td>
+        <td>
+          Give the Excel file to get the request payload
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:08 PM</td>
+        <td>
+          Give the sheet name and the number of tasks to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:08 PM</td>
+        <td>
+          Requester call the Create Task v3 endpoint to create new tasks
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:09 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:09 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=6789014, password=Dmart@12345]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:11 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:11 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjAzOTFhZjA0LWQ3ZWMtNDYwMy05NDVlLWRjOWE1ZjA2OGJiOCJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJERUxJVkVSWSBQTEFOTkVSIiwiRElTUEFUQ0hFUiBQTEFOTkVSIiwiRElTUEFUQ0hFUiIsIlBJQ0sgUExBTk5FUiIsIlBJQ0tFUiIsIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzODAzMCwiaWF0IjoxNzExMzUxNjMwLCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6Ijk2NjJmMDhmLTdmODgtNGE5Mi04MWY3LTI4Y2IwNGRhNjdlNyJ9.THoSzJy9n7naebMEtnaZINwGXj7lKLc4ltrXLIu7QjGvtB-M8JWIoc8-LDfhyqxXXFC6RSJEmcH7XEWLRRi8EU5HGzWs0qpxpCrVOJiJ8LJc9GZgB5dE4L-MZcXmlV7A5OXK-onGumukAjIKuGUKKxGV9gzaCBGR4OY1SHo9jEX3eYrnnxiExDABMYSCFV6cyXSK13KVHBodj8BHwwCCBJ3ItZkMe2DNOSaP-7h80eLzatHH-l9u9vW9k1PH5rDvzIYHDQYWKTxFGCGBgCrvnwAUe7escCNwZutujCHIRMLYgPAqf66jv-52KMWkRV8ELl8lz3BYVSmPp8DWHq21uA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjAzOTFhZjA0LWQ3ZWMtNDYwMy05NDVlLWRjOWE1ZjA2OGJiOCJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTE1MjQ0MzAsImlhdCI6MTcxMTM1MTYzMCwidXNlciI6IjY3ODkwMTQiLCJqdGkiOiJjYzNjYmM2YS0zNTBjLTRiYjktYTZlYS01NGRkMzY2ZTcwOTcifQ.LVTMqKQNnFf_WnuPEZfx9ft5BqslLIA12Ze6qTshzL_msQfxO6ojO_h9e-7K4vwdvv1oQ2LRNN0-mPDeWb8CPoVa5PAc5h4DxzH9s4_GLAvvK3Dcnas998y7I7EeDncievvmeqWxSctlrTYlCYxxInZupwwwDnDxBog3UHyzp87f8UKGV-Nqu5AC3D4DF6fgeEGDRV6lyAtino0IvVmZFmLbAWEh1HWYuuTAZp1ak57E4f0hyRWohweqVznbh-trTVsGC_sH3lwSad1mYFJwzO1Sjjijc4kVP0qciN3X087adXJYliHXrR1BOr7M_iaxg8pRjFljAtESZUP6FUBbGA"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:11 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:12 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:12 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjAzOTFhZjA0LWQ3ZWMtNDYwMy05NDVlLWRjOWE1ZjA2OGJiOCJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJERUxJVkVSWSBQTEFOTkVSIiwiRElTUEFUQ0hFUiBQTEFOTkVSIiwiRElTUEFUQ0hFUiIsIlBJQ0sgUExBTk5FUiIsIlBJQ0tFUiIsIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzODAzMCwiaWF0IjoxNzExMzUxNjMwLCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6Ijk2NjJmMDhmLTdmODgtNGE5Mi04MWY3LTI4Y2IwNGRhNjdlNyJ9.THoSzJy9n7naebMEtnaZINwGXj7lKLc4ltrXLIu7QjGvtB-M8JWIoc8-LDfhyqxXXFC6RSJEmcH7XEWLRRi8EU5HGzWs0qpxpCrVOJiJ8LJc9GZgB5dE4L-MZcXmlV7A5OXK-onGumukAjIKuGUKKxGV9gzaCBGR4OY1SHo9jEX3eYrnnxiExDABMYSCFV6cyXSK13KVHBodj8BHwwCCBJ3ItZkMe2DNOSaP-7h80eLzatHH-l9u9vW9k1PH5rDvzIYHDQYWKTxFGCGBgCrvnwAUe7escCNwZutujCHIRMLYgPAqf66jv-52KMWkRV8ELl8lz3BYVSmPp8DWHq21uA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:12 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:12 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"refills":[{"requestId":"ac96d343-1da7-49cb-8fcf-9c85129c2327","requestedAt":"2024-03-25T07:27:08.803Z","articleDetails":{"articleName":"Dabur Gulabari Pr Rose Watr (250ml)","articlePrice":"1099","ean":"8901207040801","categoryCode":"4","articleCode":"400000995","articleMrp":"1080","uom":"BOXES","caselot":10},"requestedQuantity":15,"requesterComments":"Testing the refill task","taskType":"REFILL"},{"requestId":"bed78f81-b3be-4d60-9563-cf383a75ee18","requestedAt":"2024-03-25T07:27:08.872Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false}],"articleDetails":{"articleName":"Dabur Orange Glucoplus-C Jar(400g)","articlePrice":"790","ean":"8901207020001","categoryCode":"4","articleCode":"400020723","articleMrp":"790"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"f6d95e41-dd6d-47a8-820e-e5c8b44175ed","requestedAt":"2024-03-25T07:27:08.872Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false}],"articleDetails":{"articleName":"Dabur Lemon Glucoplus-C Jar(400g)","articlePrice":"820","ean":"8901207019999","categoryCode":"4","articleCode":"400020722","articleMrp":"800"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"e11e0c4e-9694-4f30-a9e8-ea025713e793","requestedAt":"2024-03-25T07:27:08.873Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":false},{"priceBoard":"A4/2 - Half page price board","pbStatus":false},{"priceBoard":"A4/4 - Medium price board","pbStatus":false}],"articleDetails":{"articleName":"Real Pomogranet-1 Ltr","articlePrice":"820","ean":"8901207019999","categoryCode":"4","articleCode":"400020722","articleMrp":"800"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"70272199-932f-4dfa-abcc-fd3eb24758ad","requestedAt":"2024-03-25T07:27:08.874Z","articleDetails":{"articleName":"Real Litchi Nectar(180ml)","articlePrice":"239","ean":"8901207032158","categoryCode":"4","articleCode":"400002867","articleMrp":"234"},"requesterComments":"Check for the expiry date","taskType":"OTHERS"},{"requestId":"408b27b1-58b5-452f-8427-35a13f51625b","requestedAt":"2024-03-25T07:27:08.874Z","articleDetails":{"articleName":"Real Cranberry Nectar-1 L","articlePrice":"267","ean":"8901207021367","categoryCode":"4","articleCode":"400002861","articleMrp":"277"},"requesterComments":"Check for the expiry date","taskType":"OTHERS"},{"requestId":"f6576d20-0ddc-485c-a070-9aeebacdc9e0","requestedAt":"2024-03-25T07:27:08.875Z","articleDetails":{"articleName":"Kissan Mix Fruit)","articlePrice":"800","ean":"7901207019999","categoryCode":"4","articleCode":"400020722","articleMrp":"820"},"requesterComments":"Check for the expiry date","taskType":"OTHERS"},{"requestId":"cf0cd01e-b4ad-45c9-8e7b-0bcef78525d2","requestedAt":"2024-03-25T07:27:08.875Z","articleDetails":{"articleName":"Dabur Amala Juice - 500ML Jar","articlePrice":"800","ean":"861207019999","categoryCode":"4","articleCode":"400020722","articleMrp":"820"},"requesterComments":"Check for the expiry date","taskType":"OTHERS"},{"requestId":"fbe859f1-6761-4673-a021-96e90c782793","requestedAt":"2024-03-25T07:27:08.875Z","articleDetails":{"articleName":"Dabur Lemoneez-250 Ml","articlePrice":"62","ean":"8901888005717","categoryCode":"4","articleCode":"400001005","articleMrp":"50","uom":"BOXES","caselot":16},"requestedQuantity":9,"requesterComments":"Testing the refill task","taskType":"REFILL"},{"requestId":"280d33ba-7d05-436f-a9a4-39a000c3ed1c","requestedAt":"2024-03-25T07:27:08.876Z","articleDetails":{"articleName":"Real Guava(1l)","articlePrice":"209","ean":"4796008920100","categoryCode":"4","articleCode":"400002864","articleMrp":"200","uom":"BOXES","caselot":18},"requestedQuantity":17,"requesterComments":"Testing the refill task","taskType":"REFILL"},{"requestId":"e1bac580-eb9a-48a2-b9ae-4c168bbd1dc5","requestedAt":"2024-03-25T07:27:08.876Z","articleDetails":{"articleName":"Real Masala Guava Juice-1l","articlePrice":"235","ean":"8901888008022","categoryCode":"4","articleCode":"400026970","articleMrp":"230","uom":"BOXES","caselot":19},"requestedQuantity":11,"requesterComments":"Testing the refill task","taskType":"REFILL"},{"requestId":"d9b846fd-879d-41bc-9328-f6a65769436b","requestedAt":"2024-03-25T07:27:08.877Z","articleDetails":{"articleName":"Real Mix Fruit(180ml)","articlePrice":"153","ean":"8901888007780","categoryCode":"4","articleCode":"400002875","articleMrp":"145","uom":"BOXES","caselot":20},"requestedQuantity":49,"requesterComments":"Testing the refill task","taskType":"REFILL"},{"requestId":"3221946b-5c83-48d8-b838-df60bf05bf55","requestedAt":"2024-03-25T07:27:08.878Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":false},{"priceBoard":"A4/2 - Half page price board","pbStatus":false},{"priceBoard":"A4/4 - Medium price board","pbStatus":false}],"articleDetails":{"articleName":"Dabur Vedic Suraksha Tea(25x1.5g)","articlePrice":"210","ean":"8901207035739","categoryCode":"4","articleCode":"400030397","articleMrp":"200"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"ca675ce3-b88f-4561-98d8-000443a7af9d","requestedAt":"2024-03-25T07:27:08.878Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false}],"articleDetails":{"articleName":"Dabur Gulabri Pre Rose Water-120 Ml","articlePrice":"554","ean":"8901207040795","categoryCode":"4","articleCode":"400000994","articleMrp":"540"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"cfce959a-b80b-4979-ab41-bf2ccfc4af21","requestedAt":"2024-03-25T07:27:08.879Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":false},{"priceBoard":"A4/2 - Half page price board","pbStatus":false},{"priceBoard":"A4/4 - Medium price board","pbStatus":false}],"articleDetails":{"articleName":"Dabur Gulabari Pr Rose Watr (250ml)","articlePrice":"1099","ean":"8901207040801","categoryCode":"4","articleCode":"400000995","articleMrp":"1080"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"75a408d9-e042-40d4-ba24-55c59318e5c2","requestedAt":"2024-03-25T07:27:08.879Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":false},{"priceBoard":"A4/2 - Half page price board","pbStatus":false},{"priceBoard":"A4/4 - Medium price board","pbStatus":false}],"articleDetails":{"articleName":"Real Fruit Power Apple Tetr-1ltr","articlePrice":"135","ean":"8901888007353","categoryCode":"4","articleCode":"400013136","articleMrp":"128"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"b63f7034-7bf5-4159-8aba-8d1a9011a5a3","requestedAt":"2024-03-25T07:27:08.88Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false}],"articleDetails":{"articleName":"Dabur Lemoneez-250 Ml","articlePrice":"62","ean":"8901888005717","categoryCode":"4","articleCode":"400001005","articleMrp":"50"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"7b62edd9-d1e5-402f-9977-8b961614605a","requestedAt":"2024-03-25T07:27:08.88Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":false},{"priceBoard":"A4/2 - Half page price board","pbStatus":false},{"priceBoard":"A4/4 - Medium price board","pbStatus":false}],"articleDetails":{"articleName":"Real Guava(1l)","articlePrice":"209","ean":"4796008920100","categoryCode":"4","articleCode":"400002864","articleMrp":"200"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"5035b67c-e400-4055-b5a6-b86c75323163","requestedAt":"2024-03-25T07:27:08.88Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false}],"articleDetails":{"articleName":"Real Masala Guava Juice-1l","articlePrice":"235","ean":"8901888008022","categoryCode":"4","articleCode":"400026970","articleMrp":"230"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"},{"requestId":"a3d9424f-1cfe-475f-b124-2ff89b6833cd","requestedAt":"2024-03-25T07:27:08.881Z","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":false},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":false},{"priceBoard":"A4/2 - Half page price board","pbStatus":false},{"priceBoard":"A4/4 - Medium price board","pbStatus":false}],"articleDetails":{"articleName":"Real Mix Fruit(180ml)","articlePrice":"153","ean":"8901888007780","categoryCode":"4","articleCode":"400002875","articleMrp":"145"},"requesterComments":"Testing the Priceboard Task Functionality","taskType":"PRICE BOARD"}]}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Status Code for newly created Task is : 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Create Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create([
+    {
+        "requestId": "ac96d343-1da7-49cb-8fcf-9c85129c2327",
+        "refillId": "489cb05a-9f77-4f00-bdfb-4654d5af3ed2",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "bed78f81-b3be-4d60-9563-cf383a75ee18",
+        "refillId": "99c04229-9054-47ac-ba2b-4d862c3da598",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "f6d95e41-dd6d-47a8-820e-e5c8b44175ed",
+        "refillId": "97e87812-6ed0-46bb-920f-368e7fd06465",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "e11e0c4e-9694-4f30-a9e8-ea025713e793",
+        "refillId": "af02f2bc-1755-491c-9a1d-202844f83766",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "70272199-932f-4dfa-abcc-fd3eb24758ad",
+        "refillId": "7fed1c4e-00ad-44a3-a12d-21c6d553df1e",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "408b27b1-58b5-452f-8427-35a13f51625b",
+        "refillId": "ccb3c5e4-601f-4fc1-8a9e-194a2a01e3a0",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "f6576d20-0ddc-485c-a070-9aeebacdc9e0",
+        "refillId": "ae13eb9b-e969-4e8c-b1c2-1cad378637fb",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "cf0cd01e-b4ad-45c9-8e7b-0bcef78525d2",
+        "refillId": "9cefc3bd-c7ba-4e46-8797-52e1d25ba0a8",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "fbe859f1-6761-4673-a021-96e90c782793",
+        "refillId": "8cd20efb-fdd6-4b0f-909e-784f0b40602f",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "280d33ba-7d05-436f-a9a4-39a000c3ed1c",
+        "refillId": "f07b9ee9-2229-41ea-bf0f-d0cb1eaece24",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "e1bac580-eb9a-48a2-b9ae-4c168bbd1dc5",
+        "refillId": "2400412a-a0c4-4194-b19e-933d7a909186",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "d9b846fd-879d-41bc-9328-f6a65769436b",
+        "refillId": "77fa6234-ac67-46e3-8444-c8c14d963a0f",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "3221946b-5c83-48d8-b838-df60bf05bf55",
+        "refillId": "5bcf6980-96ea-4eb8-8287-667b3d40f82f",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "ca675ce3-b88f-4561-98d8-000443a7af9d",
+        "refillId": "c1fe2757-41f1-4e25-aa2a-e90743e48b6f",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "cfce959a-b80b-4979-ab41-bf2ccfc4af21",
+        "refillId": "b632d22c-3125-4f1f-b7fd-33469f4a254e",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "75a408d9-e042-40d4-ba24-55c59318e5c2",
+        "refillId": "e823e72f-d9ff-46ed-9ec5-460c2ac804e2",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "b63f7034-7bf5-4159-8aba-8d1a9011a5a3",
+        "refillId": "3726ba83-8dcb-4533-966c-5eebfa3a25e9",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "7b62edd9-d1e5-402f-9977-8b961614605a",
+        "refillId": "0db7c049-fc78-4b42-b76d-aad3750a4182",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "5035b67c-e400-4055-b5a6-b86c75323163",
+        "refillId": "546bd502-0c5b-447c-80d4-75ae3c7e797e",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    },
+    {
+        "requestId": "a3d9424f-1cfe-475f-b124-2ff89b6833cd",
+        "refillId": "8b333a17-14dd-4c6b-8912-8c8eb1b25221",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    }
+]); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Response Time for newly created Task is : 1158 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Check the response time for the task created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text red'>Response time Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Response Time is 1158 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Verify that Task is created successfully with v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 1 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is ac96d343-1da7-49cb-8fcf-9c85129c2327 and the Actual requestId is ac96d343-1da7-49cb-8fcf-9c85129c2327
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 2 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is bed78f81-b3be-4d60-9563-cf383a75ee18 and the Actual requestId is bed78f81-b3be-4d60-9563-cf383a75ee18
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 3 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is f6d95e41-dd6d-47a8-820e-e5c8b44175ed and the Actual requestId is f6d95e41-dd6d-47a8-820e-e5c8b44175ed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 4 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is e11e0c4e-9694-4f30-a9e8-ea025713e793 and the Actual requestId is e11e0c4e-9694-4f30-a9e8-ea025713e793
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 5 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is 70272199-932f-4dfa-abcc-fd3eb24758ad and the Actual requestId is 70272199-932f-4dfa-abcc-fd3eb24758ad
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 6 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is 408b27b1-58b5-452f-8427-35a13f51625b and the Actual requestId is 408b27b1-58b5-452f-8427-35a13f51625b
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 7 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is f6576d20-0ddc-485c-a070-9aeebacdc9e0 and the Actual requestId is f6576d20-0ddc-485c-a070-9aeebacdc9e0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 8 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is cf0cd01e-b4ad-45c9-8e7b-0bcef78525d2 and the Actual requestId is cf0cd01e-b4ad-45c9-8e7b-0bcef78525d2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 9 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is fbe859f1-6761-4673-a021-96e90c782793 and the Actual requestId is fbe859f1-6761-4673-a021-96e90c782793
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 10 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is 280d33ba-7d05-436f-a9a4-39a000c3ed1c and the Actual requestId is 280d33ba-7d05-436f-a9a4-39a000c3ed1c
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 11 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is e1bac580-eb9a-48a2-b9ae-4c168bbd1dc5 and the Actual requestId is e1bac580-eb9a-48a2-b9ae-4c168bbd1dc5
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 12 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is d9b846fd-879d-41bc-9328-f6a65769436b and the Actual requestId is d9b846fd-879d-41bc-9328-f6a65769436b
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 13 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is 3221946b-5c83-48d8-b838-df60bf05bf55 and the Actual requestId is 3221946b-5c83-48d8-b838-df60bf05bf55
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 14 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is ca675ce3-b88f-4561-98d8-000443a7af9d and the Actual requestId is ca675ce3-b88f-4561-98d8-000443a7af9d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 15 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is cfce959a-b80b-4979-ab41-bf2ccfc4af21 and the Actual requestId is cfce959a-b80b-4979-ab41-bf2ccfc4af21
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 16 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is 75a408d9-e042-40d4-ba24-55c59318e5c2 and the Actual requestId is 75a408d9-e042-40d4-ba24-55c59318e5c2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 17 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is b63f7034-7bf5-4159-8aba-8d1a9011a5a3 and the Actual requestId is b63f7034-7bf5-4159-8aba-8d1a9011a5a3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 18 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is 7b62edd9-d1e5-402f-9977-8b961614605a and the Actual requestId is 7b62edd9-d1e5-402f-9977-8b961614605a
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 19 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is 5035b67c-e400-4055-b5a6-b86c75323163 and the Actual requestId is 5035b67c-e400-4055-b5a6-b86c75323163
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of task number 20 is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:13 PM</td>
+        <td>
+          Excpected requestId is a3d9424f-1cfe-475f-b124-2ff89b6833cd and the Actual requestId is a3d9424f-1cfe-475f-b124-2ff89b6833cd
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update all the Refill Task by Refiller from v3 endpoint</p>
+            <p class="text-sm">
+              <span>12:57:14 PM</span> / <span>00:00:01:414</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Update all the Refill Task by Refiller from v3 endpoint</h5>
+<span class='badge badge-success'>03.25.2024 12:57:14 PM</span>
+<span class='badge badge-danger'>03.25.2024 12:57:15 PM</span>
+<span class='badge badge-default'>00:00:01:414</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:14 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:14 PM</td>
+        <td>
+          Give the Excel file to get the request payload for updating Refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:14 PM</td>
+        <td>
+          Give the sheet name to get all the Refill Task to be updated
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:14 PM</td>
+        <td>
+          Requester calls the Update Refill Task's v3 endpoint to update refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:14 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:14 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=797978, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjAzOTFhZjA0LWQ3ZWMtNDYwMy05NDVlLWRjOWE1ZjA2OGJiOCJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzODAzNCwiaWF0IjoxNzExMzUxNjM0LCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiZjk2OTZmNWQtMTc5MC00YTg0LTlhNDctNDIzMjdlZjgxNTE1In0.LxhD9KyEJRnVvB4SGyhP0b0mpsg0tHIBzzhvp3ISf671hHpvWPz-KPoE8YkDbADuRJSd0LuCb5DSimUs-e1SvjCf6Ni21t8E62R1Q-WmR6_1DCivVAREpNhU-0GKUUkyS1kdhqpIbJ7hFwSnQu5DvU1lWY0cePuoRZ6VO-_DVBS0LXG6EuZ9GyU4bEzY2X4YM6YWbvU1Q8c6S8cw9BesGc5tXJjVYo8HyhBc3s4S-nTxdL7Rvi860zszxLwf_L7YJYxajMMCzFYsU2UslDKQ7CS8OAiuGtX901Vp4dOwGynkdtsA5p-VCdJLLsEqYwVoaaTk7jhC6B9MaHf8wJ5I9A",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjAzOTFhZjA0LWQ3ZWMtNDYwMy05NDVlLWRjOWE1ZjA2OGJiOCJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTE1MjQ0MzQsImlhdCI6MTcxMTM1MTYzNCwidXNlciI6Ijc5Nzk3OCIsImp0aSI6IjFmM2IyYTI0LTdiZGItNDk2MC04NmJlLWRmNzRhOWMzYTI1OSJ9.CZihQsQsbMxQsau7mu03c9C5oW_3afPyaOWkzWk29T-x5XnCBDVVWNcscUZVkfV8XYW1gUFZT3uDNGWxn4YJz_S5seEkeu49wgRrMgWdvN8kRswTH3R2Koe-SXjO8irlMcpvlZWLXbh8wxkbMOeEANnRF_f7PdlLlF7MKOGWSN7pP9hhxqwGhya3py7020eDU-pUKBFYSYhq76Fxchm9ps8vVS5j6GamSrqjg1cGwDNG25O05RR1h2i_lI3F1pMTdUO90NCa2W2New6psyhSiHY4dvNZc02XUJvMC9fK_RuhQ2V1iIoxcImUm6pvN4fQA-FmZlJFThjaIqGnpMUzWQ"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjAzOTFhZjA0LWQ3ZWMtNDYwMy05NDVlLWRjOWE1ZjA2OGJiOCJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzODAzNCwiaWF0IjoxNzExMzUxNjM0LCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiZjk2OTZmNWQtMTc5MC00YTg0LTlhNDctNDIzMjdlZjgxNTE1In0.LxhD9KyEJRnVvB4SGyhP0b0mpsg0tHIBzzhvp3ISf671hHpvWPz-KPoE8YkDbADuRJSd0LuCb5DSimUs-e1SvjCf6Ni21t8E62R1Q-WmR6_1DCivVAREpNhU-0GKUUkyS1kdhqpIbJ7hFwSnQu5DvU1lWY0cePuoRZ6VO-_DVBS0LXG6EuZ9GyU4bEzY2X4YM6YWbvU1Q8c6S8cw9BesGc5tXJjVYo8HyhBc3s4S-nTxdL7Rvi860zszxLwf_L7YJYxajMMCzFYsU2UslDKQ7CS8OAiuGtX901Vp4dOwGynkdtsA5p-VCdJLLsEqYwVoaaTk7jhC6B9MaHf8wJ5I9A]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"refills":[{}]}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Status Code for Updated Refill Task is : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Update Refill Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "code": "QF006",
+    "msg": "Invalid status",
+    "httpCode": 400
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Response Time for Update Refill Task is : 375 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          <span class='badge white-text red'>Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:57:15 PM</td>
+        <td>
+          Expected status code is 200 and Actual status code is 400
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 25, 2024 12:57:07 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 25, 2024 12:57:15 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='24%'><b>21</b> events passed</small></div>
+<div>
+<small data-tooltip='2%'><b>2</b> events failed,
+<b data-tooltip='%'>63</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create multiple tasks with valid data":6.714,"Update all the Refill Task by Refiller from v3 endpoint":1.414
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 21,
+failEvents: 2,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 63
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

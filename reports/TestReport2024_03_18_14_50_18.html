@@ -1,0 +1,1364 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuickFill API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">QuickFill - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 18, 2024 02:50:18 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create Priceboard Task with all the fields and valid data</p>
+            <p class="text-sm">
+              <span>2:50:18 PM</span> / <span>00:00:04:377</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create Priceboard Task with all the fields and valid data</h5>
+<span class='badge badge-success'>03.18.2024 2:50:18 PM</span>
+<span class='badge badge-danger'>03.18.2024 2:50:22 PM</span>
+<span class='badge badge-default'>00:00:04:377</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:18 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:18 PM</td>
+        <td>
+          Get the unique requestId to create Priceboard Task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:18 PM</td>
+        <td>
+          Get the requestAt time to created Priceboard Task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:18 PM</td>
+        <td>
+          Provide the priceboards for a Priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:18 PM</td>
+        <td>
+          Provide article details to create Priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:18 PM</td>
+        <td>
+          Give requester comments for a Priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:18 PM</td>
+        <td>
+          Give task type for a new task to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:18 PM</td>
+        <td>
+          Requester call the Create Task endpoint to create Refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:19 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:19 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=6789014, password=Dmart@12345]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:21 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:21 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJSRUZJTEwgQVVESVRPUiIsIkRFTElWRVJZIFBMQU5ORVIiLCJESVNQQVRDSEVSIFBMQU5ORVIiLCJESVNQQVRDSEVSIiwiUElDSyBQTEFOTkVSIiwiUElDS0VSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMDg0MDAyMCwiaWF0IjoxNzEwNzUzNjIwLCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6ImIxMjYwNWRmLTBhOTYtNDM4ZC1hNmEzLWM4MzEwY2JjNTRlNyJ9.FqvpYlExQmymUMZFuxOO-HlBhqimYHWJB9yRewF5jrcL0h8WvDTMzV2kds8-dAyhrKXcCwrkR4ETmARuGwu1vFB89Z_wq8Kx4i53iZ0-JRoM7M4pV15bjxxf4Xips_5Ns-Hhmfs2-lcCcUoauAWe3jHRRPIANDhvahs0TZ_-frLIA3HYKg7DpLo-qOTsBrVcjdNwCBCzMAOxWl1enm3G_P1bzpQHuhy5S0PMiCELqhxDwvewfva3puMo4Cds_L6uS6Qxcn2eExpAb4znwC_JIFT04Qov6X-xA2ZXI1DXDebwPzKqKnF38QR7csv1RmikS0Uoq3wy8-MXXadp478YNA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTA5MjY0MjAsImlhdCI6MTcxMDc1MzYyMCwidXNlciI6IjY3ODkwMTQiLCJqdGkiOiI2NDNkYTFkNS1lZTlkLTQ4ZDgtOWI3Yi1iNDM3MjJmNGFkZjAifQ.KI3PYRkliTeQxuooQHYKw7BIPqG4aXK2DduJt1qoJbYWZddGQ8uf757jrR2D7bEeF6tzd0aM_s7YLB5fHfa4oZiO2ckvBC6C85pb0q24ID8uUM2p-ZZ1g-Ud8hjT__ckEuVDXqGmnHoy_vp13SAbCkNrNX7m77LzlgfvHYikQbztIPAYU-HWy3edOwtpJFN8gh5J-1Yzj1sC7eazuiDgR1h0hQxmsi3DS2k511h90f8pOW47VlcEHx48nEVEf1RsAghZii90OfnlYLhYyZs8cfKShkPGfu5drdkBuqvfSdaQ43msGLfLWkmTc3rXSvreJNudZ_2lQ_e9SWCngZ3ukA"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:21 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:21 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:21 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJSRUZJTEwgQVVESVRPUiIsIkRFTElWRVJZIFBMQU5ORVIiLCJESVNQQVRDSEVSIFBMQU5ORVIiLCJESVNQQVRDSEVSIiwiUElDSyBQTEFOTkVSIiwiUElDS0VSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMDg0MDAyMCwiaWF0IjoxNzEwNzUzNjIwLCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6ImIxMjYwNWRmLTBhOTYtNDM4ZC1hNmEzLWM4MzEwY2JjNTRlNyJ9.FqvpYlExQmymUMZFuxOO-HlBhqimYHWJB9yRewF5jrcL0h8WvDTMzV2kds8-dAyhrKXcCwrkR4ETmARuGwu1vFB89Z_wq8Kx4i53iZ0-JRoM7M4pV15bjxxf4Xips_5Ns-Hhmfs2-lcCcUoauAWe3jHRRPIANDhvahs0TZ_-frLIA3HYKg7DpLo-qOTsBrVcjdNwCBCzMAOxWl1enm3G_P1bzpQHuhy5S0PMiCELqhxDwvewfva3puMo4Cds_L6uS6Qxcn2eExpAb4znwC_JIFT04Qov6X-xA2ZXI1DXDebwPzKqKnF38QR7csv1RmikS0Uoq3wy8-MXXadp478YNA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:21 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:21 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"requestId":"f804a4e9-dcf7-4047-bf2c-e9363ff97276","requestedAt":"2024-03-18T09:20:18.305Z","priceBoards":[{"priceBoard":"A4/2 - Half page price board","pbStatus":false}],"articleDetails":{"articleName":"Dabur Gulabari Pr Rose Watr (250ml)","articlePrice":"1099","ean":"8901207040801","categoryCode":"4","articleCode":"400000995","articleMrp":"1080"},"requesterComments":"Testing the priceboard task","taskType":"PRICEBOARD"}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Status Code for newly created Priceboard Task is : 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Create Priceboard Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "SiteId": "4017",
+    "requestId": "f804a4e9-dcf7-4047-bf2c-e9363ff97276",
+    "refillId": "f446cdf0-43f6-478d-a26b-84208acb1ad1",
+    "floorWalkId": "c7957ad1-47e4-4224-bb76-2d137f6e8fdb",
+    "taskType": "PRICEBOARD",
+    "articleDetails": {
+        "ean": "8901207040801",
+        "articleCode": "400000995",
+        "articleName": "Dabur Gulabari Pr Rose Watr (250ml)",
+        "articlePrice": "1099",
+        "articleMrp": "1080",
+        "categoryCode": "4",
+        "uom": "",
+        "caselot": 0
+    },
+    "requester": "6544a1da30e33d33903e5425",
+    "Status": "OPEN",
+    "requestedAt": "2024-03-18T09:20:18.305Z",
+    "priceBoards": [
+        {
+            "priceBoard": "A4/2 - Half page price board",
+            "pbStatus": false
+        }
+    ],
+    "requesterComments": "Testing the priceboard task"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Response Time for newly created Priceboard Task is : 368 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Verify that Create Task schema should be equal to CreatePriceBoardTaskSchema.json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+           Schema is pass 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Check the response time for the Priceboard Task created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>Response time Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Response Time is 368 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Verify that Priceboard Task is created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>SiteId field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected SiteId is 4017 and the Actual SiteId is 4017
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>taskType field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected taskType is PRICEBOARD and the Actual taskType is PRICEBOARD
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          articleDetails field validation -
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>ean field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected ean is 8901207040801 and the Actual ean is 8901207040801
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>articleCode field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected articleCode is 400000995 and the Actual articleCode is 400000995
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>articleName field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected articleName is Dabur Gulabari Pr Rose Watr (250ml) and the Actual articleName is Dabur Gulabari Pr Rose Watr (250ml)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>articlePrice field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected articlePrice is 1099 and the Actual articlePrice is 1099
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>articleMrp field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected articlePrice is 1080 and the Actual articleMrp is 1080
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>categoryCode field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected categoryCode is 4 and the Actual categoryCode is 4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>uom field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected uom is "" and the Actual uom is "" 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>caselot field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected caselot is 0 and the Actual caselot is 0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>requester field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected requester is 6544a1da30e33d33903e5425 and the Actual requester is 6544a1da30e33d33903e5425
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>Status field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected Status is OPEN and the Actual requester is OPEN
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>requestedAt field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected requestedAt is 2024-03-18T09:20:18.305Z and the Actual requestedAt is 2024-03-18T09:20:18.305Z
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>priceBoards field is Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected priceBoard is A4/2 - Half page price board and the Actual priceBoard is A4/2 - Half page price board
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected pbStatus is false and the Actual pbStatus is false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          <span class='badge white-text green'>requesterComments field is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Expected requesterComments is Testing the priceboard task and the Actual requesterComments is Testing the priceboard task
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Priceboard Task by Refiller with invalid refillId</p>
+            <p class="text-sm">
+              <span>2:50:22 PM</span> / <span>00:00:00:946</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update Priceboard Task by Refiller with invalid refillId</h5>
+<span class='badge badge-success'>03.18.2024 2:50:22 PM</span>
+<span class='badge badge-danger'>03.18.2024 2:50:23 PM</span>
+<span class='badge badge-default'>00:00:00:946</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Get the refillId to update priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Give the status to update the priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Provide the priceboards to be updated
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Give the comments for updating priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Requester calls the Update Priceboard Task's endpoint to update priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:22 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=727272, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJzaXRlIjoiNDAyMSIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMDg0MDAyMywiaWF0IjoxNzEwNzUzNjIzLCJ1c2VyIjoiNzI3MjcyIiwianRpIjoiMWI0MTg5NDAtZmQ2NC00NGM0LWFjYjItZGFkMmQxNjQ2MmM3In0.qdPqSqCVwYr35IcYxUO-ikq4UCWQHek5L9FEKDQPO1jr4t5dC2bKgoL2WRo1kbQ0f6HOMLuo7ew6glbbK2YbKxsf9e6oG4GyC3gYSHCOlXdMrdN8Xo1XxeY_5Nda2LTlFdoC7pDxj-XSl2LopCJJvX5sh7lY6DIwkLEQiGO7I8Usroj1VSByJJ1DpwjfcsSuB35qgiSMQ2l9QOXn07q-2v9BEW2hchEwhVpKK7HgptXQATne5X4YAN6ULSPRwhc2fo4wtIydTgGnf8K7LXbueXWUW0WWc6mJFFjg_IEU0n5kuII4NiMleM10L8Xll63eqeXgud7fiy4sR3J93hnYYQ",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTA5MjY0MjMsImlhdCI6MTcxMDc1MzYyMywidXNlciI6IjcyNzI3MiIsImp0aSI6ImI3YjUwZjg2LWQ3Y2UtNGU0Yi04YzYwLTIwMWUxMmYwYjc4ZCJ9.jdZeODV3T1ZuUEz3rvQvaCTrOzNWt7Fdg_ERKjcAxMcfvFuB0V19ZDuyZ2kIItUuD9Y9-Tf3WwxB1KYgoQwifKfPy4aVYcC6v2MV8VV5k3b1DCSU9puBbKbj_A1-APJmC9Pfds-iNMTDLj0n0n02XW4k12zVGu7r4OEq2PEaDlPM9SRyM6dmFuJHKe3KbKxkO_rHawM5c-Li6B1JjVv8UHu1G472Gvs9gtsjWEzqGvHQJbL1PqXNC1hnMbgV6c3iclLQw-lb4HEbJIAP4gdhk5Kf1K-B8gRnv05fcRXtQ2FDFh_ROBjdxR9DQVX7Q8Q_HYurEK_q_Ubg_jZEbLXYvg"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJzaXRlIjoiNDAyMSIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMDg0MDAyMywiaWF0IjoxNzEwNzUzNjIzLCJ1c2VyIjoiNzI3MjcyIiwianRpIjoiMWI0MTg5NDAtZmQ2NC00NGM0LWFjYjItZGFkMmQxNjQ2MmM3In0.qdPqSqCVwYr35IcYxUO-ikq4UCWQHek5L9FEKDQPO1jr4t5dC2bKgoL2WRo1kbQ0f6HOMLuo7ew6glbbK2YbKxsf9e6oG4GyC3gYSHCOlXdMrdN8Xo1XxeY_5Nda2LTlFdoC7pDxj-XSl2LopCJJvX5sh7lY6DIwkLEQiGO7I8Usroj1VSByJJ1DpwjfcsSuB35qgiSMQ2l9QOXn07q-2v9BEW2hchEwhVpKK7HgptXQATne5X4YAN6ULSPRwhc2fo4wtIydTgGnf8K7LXbueXWUW0WWc6mJFFjg_IEU0n5kuII4NiMleM10L8Xll63eqeXgud7fiy4sR3J93hnYYQ]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"refillId":"","Status":"COMPLETED","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":true},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":true}],"refillerComments":"checking the update priceboard task functionality"}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Status Code for Updated Priceboard Task is : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Update Priceboard Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "code": "QF001",
+    "msg": "Refill Validation Error",
+    "validation_errors": [
+        {
+            "FailedField": "UpdatePbV2.RefillId",
+            "Tag": "required",
+            "Value": ""
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Response Time for Update Priceboard Task is : 404 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Verify that status code be equal to 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Expected Status Code is 400 and the Actual Status Code is 400
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="71"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Priceboard Task by Refiller with invalid refillId</p>
+            <p class="text-sm">
+              <span>2:50:23 PM</span> / <span>00:00:01:227</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update Priceboard Task by Refiller with invalid refillId</h5>
+<span class='badge badge-success'>03.18.2024 2:50:23 PM</span>
+<span class='badge badge-danger'>03.18.2024 2:50:25 PM</span>
+<span class='badge badge-default'>00:00:01:227</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=71</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Get the refillId to update priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Give the status to update the priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Provide the priceboards to be updated
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Give the comments for updating priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Requester calls the Update Priceboard Task's endpoint to update priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:23 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=727272, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:24 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:24 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJzaXRlIjoiNDAyMSIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMDg0MDAyNCwiaWF0IjoxNzEwNzUzNjI0LCJ1c2VyIjoiNzI3MjcyIiwianRpIjoiM2EzNzE2ZWUtY2UyMy00NGZkLWE4MmItMGZmOTBjNjM4ZDJlIn0.TOJi3R5Kfz3b2b3bu3UPqKrxTEzf5SexauAOIAIx32Xgkgz6oy_43KVrxAJ6u36wwPJPd3iDX8B0Uyg4l2gdAtrYND_oXp5QnkJMgTY3L9bAWeMobMT2nB4yrNMU9p9mQ3SOKvzLXsszzWhAhs7D3U_GFI-r-rK-RTVIqfgHYlQW2ke8JK-G3QNRCl3O1j6LAt7TEQ7UylNk1tpJoaVcF1Ss8FQo9Sn19GevGeZoTL5WeUD49ely9Zj4UJMJo28AOB1w7t3prACf50Qv1-uEoGwbcB44_is9HVthXOZRkPBpdc4fB8WH0Nxwn3jyImihhF8viqTWL2F9VOWSpfGEBw",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTA5MjY0MjQsImlhdCI6MTcxMDc1MzYyNCwidXNlciI6IjcyNzI3MiIsImp0aSI6IjYxZmExZGEyLTk4ZTQtNDE1Yy1hYzc3LWI1ODM4ZDlhYzViYSJ9.pNBsHGL8gq4J1P0DO4pTZF74p3qLAxgSgcNI4MJTo_0K4YQS0GFy5rto6oG6vHEY6_6zZiExrcfNKF5QbcyGYJV2--xZdm60vuu_0pXBevgh-GGz5EwHU0M37egX0QS8Qp5YlXLrL5kByg-4fd-zGGbn4Bf6BVm2fStdQteLKTDcgSIpJo3T1UXoy-Mnn7PkNL9qIuV4UU7Jr6L7fkD5H1h2UUgTN8WiBLt0t2uCuxHdJXnm6GxVZHMfeDh0KjhHBFt6JBIjg-olrQD8fWZtI8F9tymiK0kO5K9MLLKTbBt8avOsNFLwGCVZpiwouXMvtP06wvpW7Vwf7excLz3jUw"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:24 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:24 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:24 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJzaXRlIjoiNDAyMSIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMDg0MDAyNCwiaWF0IjoxNzEwNzUzNjI0LCJ1c2VyIjoiNzI3MjcyIiwianRpIjoiM2EzNzE2ZWUtY2UyMy00NGZkLWE4MmItMGZmOTBjNjM4ZDJlIn0.TOJi3R5Kfz3b2b3bu3UPqKrxTEzf5SexauAOIAIx32Xgkgz6oy_43KVrxAJ6u36wwPJPd3iDX8B0Uyg4l2gdAtrYND_oXp5QnkJMgTY3L9bAWeMobMT2nB4yrNMU9p9mQ3SOKvzLXsszzWhAhs7D3U_GFI-r-rK-RTVIqfgHYlQW2ke8JK-G3QNRCl3O1j6LAt7TEQ7UylNk1tpJoaVcF1Ss8FQo9Sn19GevGeZoTL5WeUD49ely9Zj4UJMJo28AOB1w7t3prACf50Qv1-uEoGwbcB44_is9HVthXOZRkPBpdc4fB8WH0Nxwn3jyImihhF8viqTWL2F9VOWSpfGEBw]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:24 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:24 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"refillId":null,"Status":"COMPLETED","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":true},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":true}],"refillerComments":"checking the update priceboard task functionality"}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Status Code for Updated Priceboard Task is : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Update Priceboard Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "code": "QF001",
+    "msg": "Refill Validation Error",
+    "validation_errors": [
+        {
+            "FailedField": "UpdatePbV2.RefillId",
+            "Tag": "required",
+            "Value": ""
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Response Time for Update Priceboard Task is : 712 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Verify that status code be equal to 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Expected Status Code is 400 and the Actual Status Code is 400
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="96"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Priceboard Task by Refiller with invalid refillId</p>
+            <p class="text-sm">
+              <span>2:50:25 PM</span> / <span>00:00:00:841</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update Priceboard Task by Refiller with invalid refillId</h5>
+<span class='badge badge-success'>03.18.2024 2:50:25 PM</span>
+<span class='badge badge-danger'>03.18.2024 2:50:25 PM</span>
+<span class='badge badge-default'>00:00:00:841</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=96</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Get the refillId to update priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Give the status to update the priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Provide the priceboards to be updated
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Give the comments for updating priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Requester calls the Update Priceboard Task's endpoint to update priceboard task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=727272, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJzaXRlIjoiNDAyMSIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMDg0MDAyNSwiaWF0IjoxNzEwNzUzNjI1LCJ1c2VyIjoiNzI3MjcyIiwianRpIjoiMTVkOGNmYjctM2Q2My00MWJmLTkxOTYtODM4NzIyMjA3MmQzIn0.qzBf4ihHyaa85n2lUCq6I_XlvV8HGtYJ1Q3l-xHBsiJIbdKvT98mgYONcG9wrhRnEZx9rFdTtsNN_r5aF96WKG-pbHtPP2N1w-3LOXUSfVs4iDa_Q79kga_gvRfdf3J18pKxXU9G1rNoLdMOWc3OtcUOtDMbgHC4Jju-RHzWTN7Wg6xShAiB3xBJ5ezqltJyyI62YSWs6GQzguTnSzQYsCTlur_KDsqH5DteLIhL8H9hMWliaCt-rW9nW1wN0Jf3zQtUJwzFXrnlmMmqgxpE3YHNykmd3fdlQaZeFjuc-WZSQrcKJd3p0BtrYhcVJCkue_SJEx9matnPSfrpeHKlnA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTA5MjY0MjUsImlhdCI6MTcxMDc1MzYyNSwidXNlciI6IjcyNzI3MiIsImp0aSI6ImY4YWEwYWY1LTlkM2UtNDczMy1iY2EzLWY5NGIxZWUwMDY5NiJ9.PgdjxZr0xdklvqS-eOoa2P4DqicwLcmHJz9voWVz6qlFIq_1u9qsrc0Tn7MhsM6embSqfEGZsODGQ9I_2PsFFStVWH_WUQ2Olx61Zi7mD80Cp7CRK2rRMFQwPjHWMS2-x3fSpwcFzu7MXqQ1ubtXshKPXrIWhiIS_kLSQZtb8OlDkze1jcbg_c6e82F2xxmdmZazvw7gN8RtHZEBB43zWQmVUMfzm32e-L3kyvFCWeRdtTz20nidYnHRuNmJgJMYw1djs9-KXsGMozgcR9IbLwAAH-HvT_wS4ze_IBfoAY0aPYnvj2Bkgq4esGG1scykblqvXnojGR7yDtEEeKYj_g"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTRlMDY0NTMwZTMzZDMzOTAzZTU1OGQiLCJzaXRlIjoiNDAyMSIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMDg0MDAyNSwiaWF0IjoxNzEwNzUzNjI1LCJ1c2VyIjoiNzI3MjcyIiwianRpIjoiMTVkOGNmYjctM2Q2My00MWJmLTkxOTYtODM4NzIyMjA3MmQzIn0.qzBf4ihHyaa85n2lUCq6I_XlvV8HGtYJ1Q3l-xHBsiJIbdKvT98mgYONcG9wrhRnEZx9rFdTtsNN_r5aF96WKG-pbHtPP2N1w-3LOXUSfVs4iDa_Q79kga_gvRfdf3J18pKxXU9G1rNoLdMOWc3OtcUOtDMbgHC4Jju-RHzWTN7Wg6xShAiB3xBJ5ezqltJyyI62YSWs6GQzguTnSzQYsCTlur_KDsqH5DteLIhL8H9hMWliaCt-rW9nW1wN0Jf3zQtUJwzFXrnlmMmqgxpE3YHNykmd3fdlQaZeFjuc-WZSQrcKJd3p0BtrYhcVJCkue_SJEx9matnPSfrpeHKlnA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"refillId":"888c2-685a-a5bf-4d4-654a-q67e-345d-769a-2dc38v022bn","Status":"COMPLETED","priceBoards":[{"priceBoard":"A4/1 - Full page price board","pbStatus":true},{"priceBoard":"A4/9 - Cosmetic small price board","pbStatus":true}],"refillerComments":"checking the update priceboard task functionality"}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Status Code for Updated Priceboard Task is : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Update Priceboard Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "code": "QF001",
+    "msg": "Refill Validation Error",
+    "validation_errors": [
+        {
+            "FailedField": "UpdatePbV2.RefillId",
+            "Tag": "max",
+            "Value": "50"
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Response Time for Update Priceboard Task is : 339 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Verify that status code be equal to 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:25 PM</td>
+        <td>
+          Expected Status Code is 400 and the Actual Status Code is 400
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 18, 2024 02:50:18 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 18, 2024 02:50:25 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>4</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='15%'><b>20</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>109</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create Priceboard Task with all the fields and valid data":4.377,"Update Priceboard Task by Refiller with invalid refillId":0.946,"Update Priceboard Task by Refiller with invalid refillId":1.227,"Update Priceboard Task by Refiller with invalid refillId":0.841
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 20,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 109
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

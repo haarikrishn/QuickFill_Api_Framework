@@ -1,0 +1,69 @@
+{
+  "ContactDetails": {
+    "Email": "test@test.com",
+    "Phone": 8200409244,
+    "CountryCode": null,
+    "PermanentAddress": {
+      "Address1": "S/O: Ghanshyambhai, 16,P.d.p.u road",
+      "Country": "India",
+      "State": "ASSAM",
+      "StateId": 18,
+      "ParliamentaryConstituency": "",
+      "PinCode": "382007",
+      "City": "Raysan",
+      "DistrictDetails": {
+        "District": "BAKSA",
+        "DistrictId": 616,
+        "ParliamentaryConstituency": "",
+        "SubDistrict": "",
+        "SubDistrictId": ""
+      }
+    },
+    "SameAsPermanentAddress": true,
+    "CommunicationAddress": {
+      "Address1": "S/O: Ghanshyambhai, 16,P.d.p.u road",
+      "Country": "India",
+      "State": "ASSAM",
+      "StateId": 18,
+      "ParliamentaryConstituency": "",
+      "PinCode": "382007",
+      "City": "Raysan",
+      "DistrictDetails": {
+        "District": "BAKSA",
+        "DistrictId": 616,
+        "ParliamentaryConstituency": "",
+        "SubDistrict": "",
+        "SubDistrictId": ""
+      }
+    },
+    "TrainingStatus": "Experienced"
+  },
+  "InterestedInPmkvy": true,
+  "EducationLevel": "I.T.I",
+  "EducationalDetails": [
+    {
+      "Education": "I.T.I",
+      "PassingYear": null
+    }
+  ],
+  "PersonalDetails": {
+    "NamePrefix": "Mr",
+    "FirstName": "Jani Mitul",
+    "Gender": "Male",
+    "Dob": "1999-03-02T00:00:00.000Z",
+    "FatherName": "Test",
+    "MotherName": "Test",
+    "MaritialStatus": "Single/Unmarried",
+    "Religion": "Atheist",
+    "Category": "OBC",
+    "DifferentlyAbled": false,
+    "DisabilityCategory": "",
+    "IdType": "aadhar",
+    "Aadhar": {
+      "AadhaarRef": "4c4f7b5e-e476-6072-7b80-ee6f13634622-3426",
+      "AadhaarVerified": true,
+      "AadharNumber": ""
+    },
+    "GuardianName": "Test"
+  }
+}

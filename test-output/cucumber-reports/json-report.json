@@ -1,0 +1,2208 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Generate access token from username and password",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Give Username and Password to get Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "6789014"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-10T13:12:55.197Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Create multiple tasks with valid data",
+        "description": "",
+        "id": "verify-the-functionality-of-create-task-with-v3-endpoint;create-multiple-tasks-with-valid-data",
+        "after": [
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1929000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Give the Excel file to get the request payload \"QuickFill_TestData.xlsx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QuickFill_TestData.xlsx\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.CreateTaskSteps_v1.giveTheExcelFileToGetTheRequestPayload(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Give the sheet name \"TaskList\" and the number of tasks to be created 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TaskList\"",
+                  "offset": 20
+                },
+                {
+                  "val": "3",
+                  "offset": 69
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.CreateTaskSteps_v1.giveTheSheetNameAndTheNumberOfTasksToBeCreated(java.lang.String,int)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4860000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Requester call the Create Task v1 endpoint to create new tasks",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.CreateTaskSteps_v1.requesterCallTheCreateTaskV1EndpointToCreateTask()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "verify that status code be equal to \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "Check the response time for the task created",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.CreateTaskSteps_v1.checkTheResponseTimeForTheTaskCreated()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Verify that Task is created successfully with v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.CreateTaskSteps_v1.verifyThatRefillTaskIsCreatedSuccessfullyForV()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Excel"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality of Create Task with v3 endpoint",
+    "description": "",
+    "id": "verify-the-functionality-of-create-task-with-v3-endpoint",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SingleSuite/CreateTask_v1.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Generate access token from username and password",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Give Username and Password to get Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "678787"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-10T13:13:02.493Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Update all the Others Task by Auditor from v1 endpoint",
+        "description": "",
+        "id": "verify-the-functionality-of-update-others-task-by-refiller;update-all-the-others-task-by-auditor-from-v1-endpoint",
+        "after": [
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 408000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Give the Excel file to get the request payload for updating Others task \"QuickFill_TestData.xlsx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QuickFill_TestData.xlsx\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.giveTheExcelFileToGetTheRequestPayloadForUpdatingOthersTask(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Give the sheet name \"UpdateOthersTasksByAuditor\" to get all the Others Task to be updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdateOthersTasksByAuditor\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.giveTheSheetNameToGetAllTheOthersTaskToBeUpdated(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1192000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Requester calls the Update Others Task v1 endpoint to update list of all others task",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.requesterCallsTheUpdateOthersTaskVEndpointToUpdateListOfAllOthersTask()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "Verify that status code be equal to \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "Check the response time for the Others Task updated from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.checkTheResponseTimeForTheOthersTaskUpdated()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Verify that others task is updated successfully from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.verifyThatOthersTaskIsUpdatedSuccessfully()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Excel"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality of Update Others Task by Refiller",
+    "description": "",
+    "id": "verify-the-functionality-of-update-others-task-by-refiller",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SingleSuite/UpdateOthersTaskByAuditor_v1.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Generate access token from username and password",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Give Username and Password to get Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "797978"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-10T13:13:04.163Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Update all the Others Task by Refiller from v1 endpoint",
+        "description": "",
+        "id": "verify-the-functionality-of-update-others-task-by-refiller;update-all-the-others-task-by-refiller-from-v1-endpoint",
+        "after": [
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 206000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Give the Excel file to get the request payload for updating Others task \"QuickFill_TestData.xlsx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QuickFill_TestData.xlsx\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.giveTheExcelFileToGetTheRequestPayloadForUpdatingOthersTask(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Give the sheet name \"UpdateOthersTasksByRefiller\" to get all the Others Task to be updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdateOthersTasksByRefiller\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.giveTheSheetNameToGetAllTheOthersTaskToBeUpdated(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1166000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Requester calls the Update Others Task v1 endpoint to update list of all others task",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.requesterCallsTheUpdateOthersTaskVEndpointToUpdateListOfAllOthersTask()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "Verify that status code be equal to \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "Check the response time for the Others Task updated from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.checkTheResponseTimeForTheOthersTaskUpdated()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Verify that others task is updated successfully from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateOthersTaskSteps_v1.verifyThatOthersTaskIsUpdatedSuccessfully()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Excel"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality of Update Others Task by Refiller",
+    "description": "",
+    "id": "verify-the-functionality-of-update-others-task-by-refiller",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SingleSuite/UpdateOthersTaskByRefiller_v1.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Generate access token from username and password",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Give Username and Password to get Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "678787"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-10T13:13:05.600Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Update all the Priceboard Task by Auditor from v1 endpoint",
+        "description": "",
+        "id": "verify-the-functionality-of-update-refill-task-by-refiller;update-all-the-priceboard-task-by-auditor-from-v1-endpoint",
+        "after": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Give the Excel file to get the request payload for updating Priceboad task \"QuickFill_TestData.xlsx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QuickFill_TestData.xlsx\"",
+                  "offset": 75
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.giveTheExcelFileToGetTheRequestPayloadForUpdatingPriceboadTask(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Give the sheet name \"UpdatePriceboardTasksByAuditor\" to get all the Priceboard Task to be updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdatePriceboardTasksByAuditor\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.giveTheSheetNameToGetAllThePriceboardTaskToBeUpdated(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1128000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Requester calls the Update Priceboard Task v1 endpoint to update list of all priceboard task",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.requesterCallsTheUpdatePriceboardTaskVEndpointToUpdateListOfAllPriceboardTask()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "Verify that status code be equal to \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "Check the response time for the Priceboard Task updated from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.checkTheResponseTimeForThePriceboardTaskUpdated()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Verify that priceboard task is updated successfully from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.verifyThatPriceboardTaskIsUpdatedSuccessfully()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Excel"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality of Update Refill Task by Refiller",
+    "description": "",
+    "id": "verify-the-functionality-of-update-refill-task-by-refiller",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SingleSuite/UpdatePriceboardTaskByAuditor_v1.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Generate access token from username and password",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Give Username and Password to get Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "797978"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-10T13:13:06.955Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Update all the Priceboard Task by Refiller from v1 endpoint",
+        "description": "",
+        "id": "verify-the-functionality-of-update-refill-task-by-refiller;update-all-the-priceboard-task-by-refiller-from-v1-endpoint",
+        "after": [
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Give the Excel file to get the request payload for updating Priceboad task \"QuickFill_TestData.xlsx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QuickFill_TestData.xlsx\"",
+                  "offset": 75
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.giveTheExcelFileToGetTheRequestPayloadForUpdatingPriceboadTask(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Give the sheet name \"UpdatePriceboardTasksByRefiller\" to get all the Priceboard Task to be updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdatePriceboardTasksByRefiller\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.giveTheSheetNameToGetAllThePriceboardTaskToBeUpdated(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1143000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Requester calls the Update Priceboard Task v1 endpoint to update list of all priceboard task",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.requesterCallsTheUpdatePriceboardTaskVEndpointToUpdateListOfAllPriceboardTask()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "Verify that status code be equal to \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "Check the response time for the Priceboard Task updated from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.checkTheResponseTimeForThePriceboardTaskUpdated()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Verify that priceboard task is updated successfully from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdatePriceboardTaskSteps_v1.verifyThatPriceboardTaskIsUpdatedSuccessfully()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Excel"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality of Update Refill Task by Refiller",
+    "description": "",
+    "id": "verify-the-functionality-of-update-refill-task-by-refiller",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SingleSuite/UpdatePriceboardTaskByRefiller_v1.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Generate access token from username and password",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Give Username and Password to get Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "678787"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-10T13:13:08.279Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Update all the Refill Task by Auditor from v1 endpoint",
+        "description": "",
+        "id": "verify-the-functionality-of-update-refill-task-by-refiller-from-v1-endpoint;update-all-the-refill-task-by-auditor-from-v1-endpoint",
+        "after": [
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 163000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Give the Excel file to get the request payload for updating Refill task \"QuickFill_TestData.xlsx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QuickFill_TestData.xlsx\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.giveTheExcelFileToGetTheRequestPayloadForUpdatingRefillTask(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Give the sheet name \"UpdateRefillTasksByAuditor\" to get all the Refill Task to be updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdateRefillTasksByAuditor\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.giveTheSheetNameAndTheNumberOfTasksToBeUpdated(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1133000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Requester calls the Update Refill Task\u0027s v1 endpoint to update list of all refill task",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.requesterCallsTheUpdateRefillTaskSVEndpointToUpdateListOfAllRefillTask()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "verify that status code be equal to \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "Check the response time for the Refill Task updated from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.checkTheResponseTimeForTheRefillTaskUpdated()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Verify that refill task is updated successfully by Auditor from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.verifyThatRefillTaskIsUpdatedSuccessfullyByAuditor()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Excel"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality of Update Refill Task by Refiller from v1 endpoint",
+    "description": "",
+    "id": "verify-the-functionality-of-update-refill-task-by-refiller-from-v1-endpoint",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SingleSuite/UpdateRefillTaskByAuditor_v1.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Generate access token from username and password",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Give Username and Password to get Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "797978"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-10T13:13:09.641Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Update all the Refill Task by Refiller from v1 endpoint",
+        "description": "",
+        "id": "verify-the-functionality-of-update-refill-task-by-refiller-from-v1-endpoint;update-all-the-refill-task-by-refiller-from-v1-endpoint",
+        "after": [
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 127000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Give the Excel file to get the request payload for updating Refill task \"QuickFill_TestData.xlsx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QuickFill_TestData.xlsx\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.giveTheExcelFileToGetTheRequestPayloadForUpdatingRefillTask(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Give the sheet name \"UpdateRefillTasksByRefiller\" to get all the Refill Task to be updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdateRefillTasksByRefiller\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.giveTheSheetNameAndTheNumberOfTasksToBeUpdated(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1154000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Requester calls the Update Refill Task\u0027s v1 endpoint to update list of all refill task",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.requesterCallsTheUpdateRefillTaskSVEndpointToUpdateListOfAllRefillTask()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "verify that status code be equal to \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "Check the response time for the Refill Task updated from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.checkTheResponseTimeForTheRefillTaskUpdated()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Verify that refill task is updated successfully from v1 endpoint",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.UpdateRefillTaskSteps_v1.verifyThatRefillTaskIsUpdatedSuccessfully()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Excel"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality of Update Refill Task by Refiller from v1 endpoint",
+    "description": "",
+    "id": "verify-the-functionality-of-update-refill-task-by-refiller-from-v1-endpoint",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SingleSuite/UpdateRefillTaskByRefiller_v1.feature",
+    "tags": []
+  }
+]

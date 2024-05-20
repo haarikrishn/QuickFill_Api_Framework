@@ -1,0 +1,870 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuickFill</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Extent Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 10, 2024 12:38:29</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 10, 2024 12:38:29</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 10, 2024 12:38:38</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>4</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>4</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='32%'><b>9</b> steps passed</small></div>
+<div>
+<small data-tooltip='14%'><b>4</b> steps failed,
+<b>15</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Verify the functionality of Create Task with v3 endpoint":5.216,"Verify the functionality of Update Others Task by Refiller":0.474,"Verify the functionality of Update Refill Task by Refiller":0.254,"Verify the functionality of Update Refill Task by Refiller from v3 endpoint":0.259
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Excel</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>raju</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>windows</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>QuickFill</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 4,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 9,
+failGrandChild: 4,
+warningGrandChild: 0,
+skipGrandChild: 15,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Excel</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the functionality of Create Task with v3 endpoint</p>
+            <p class="text-sm">
+              <span>12:38:31 PM</span> / <span>00:00:05:216</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify the functionality of Create Task with v3 endpoint</h5>
+<span class='badge badge-success'>04.10.2024 12:38:31 PM</span>
+<span class='badge badge-danger'>04.10.2024 12:38:36 PM</span>
+<span class='badge badge-default'>00:00:05:216</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Create multiple tasks with valid data</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password to get Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>6789014</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.CreateTaskSteps_v3.giveTheExcelFileToGetTheRequestPayload(java.lang.String)">
+                <span>And Give the Excel file to get the request payload "QuickFill_TestData.xlsx"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.CreateTaskSteps_v3.giveTheSheetNameAndTheNumberOfTasksToBeCreated(java.lang.String,int)">
+                <span>And Give the sheet name "TaskList" and the number of tasks to be created 3</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.dmartLabs.stepdefinitions.CreateTaskSteps_v3.requesterCallTheCreateTaskEndpointVToCreateTask()">
+                <span>When Requester call the Create Task v1 endpoint to create new tasks</span>
+      <div>
+        <textarea disabled class="code-block">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at com.dmartLabs.stepdefinitions.GenerateTokenStep.sendUsernameAndPasswordToGetAccessToken(GenerateTokenStep.java:21)
+	at com.dmartLabs.stepdefinitions.CommonUtilities.genericHeader(CommonUtilities.java:237)
+	at com.dmartLabs.stepdefinitions.CreateTaskSteps_v3.requesterCallTheCreateTaskEndpointVToCreateTask(CreateTaskSteps_v3.java:45)
+	at ✽.Requester call the Create Task v1 endpoint to create new tasks(file:///C:/Users/FD329/OneDrive/Desktop/QuickFill_ApiFramework/src/test/resources/features/SingleSuite/CreateTask_v3.feature:12)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:119)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at com.dmartLabs.stepdefinitions.GenerateTokenStep.sendUsernameAndPasswordToGetAccessToken(GenerateTokenStep.java:21)
+	at com.dmartLabs.stepdefinitions.CommonUtilities.genericHeader(CommonUtilities.java:237)
+	at com.dmartLabs.stepdefinitions.CreateTaskSteps_v3.requesterCallTheCreateTaskEndpointVToCreateTask(CreateTaskSteps_v3.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at com.dmartLabs.runner.TestRunner.scenario(TestRunner.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "201"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.CreateTaskSteps_v3.checkTheResponseTimeForTheTaskCreated()">
+                <span>And Check the response time for the task created</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.CreateTaskSteps_v3.verifyThatRefillTaskIsCreatedSuccessfullyForV()">
+                <span>And Verify that Task is created successfully with v1 endpoint</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the functionality of Update Others Task by Refiller</p>
+            <p class="text-sm">
+              <span>12:38:36 PM</span> / <span>00:00:00:474</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify the functionality of Update Others Task by Refiller</h5>
+<span class='badge badge-success'>04.10.2024 12:38:36 PM</span>
+<span class='badge badge-danger'>04.10.2024 12:38:37 PM</span>
+<span class='badge badge-default'>00:00:00:474</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>Update all the Others Task by Refiller from v3 endpoint</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password to get Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>727272</td></tr><tr><td>password</td><td>Dmart@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.UpdateOthersTaskByRefillerSteps_v3.giveTheExcelFileToGetTheRequestPayloadForUpdatingOthersTask(java.lang.String)">
+                <span>And Give the Excel file to get the request payload for updating Others task "QuickFill_TestData.xlsx"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.dmartLabs.stepdefinitions.UpdateOthersTaskByRefillerSteps_v3.giveTheSheetNameToGetAllTheOthersTaskToBeUpdated(java.lang.String)">
+                <span>And Give the sheet name "UpdateOthersTasksByRefiller" to get all the Others Task to be updated</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at com.dmartLabs.stepdefinitions.UpdateOthersTaskByRefillerSteps_v3.giveTheSheetNameToGetAllTheOthersTaskToBeUpdated(UpdateOthersTaskByRefillerSteps_v3.java:38)
+	at ✽.Give the sheet name "UpdateOthersTasksByRefiller" to get all the Others Task to be updated(file:///C:/Users/FD329/OneDrive/Desktop/QuickFill_ApiFramework/src/test/resources/features/SingleSuite/UpdateOthersTaskByRefiller_v3.feature:11)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdateOthersTaskByRefillerSteps_v3.requesterCallsTheUpdateOthersTaskVEndpointToUpdateListOfAllOthersTask()">
+                <span>When Requester calls the Update Others Task v3 endpoint to update list of all others task</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(java.lang.String)">
+                <span>Then Verify that status code be equal to "200"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdateOthersTaskByRefillerSteps_v3.checkTheResponseTimeForTheOthersTaskUpdated()">
+                <span>And Check the response time for the Others Task updated from v3 endpoint</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdateOthersTaskByRefillerSteps_v3.verifyThatOthersTaskIsUpdatedSuccessfully()">
+                <span>And Verify that others task is updated successfully from v3 endpoint</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="53"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the functionality of Update Refill Task by Refiller</p>
+            <p class="text-sm">
+              <span>12:38:37 PM</span> / <span>00:00:00:254</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify the functionality of Update Refill Task by Refiller</h5>
+<span class='badge badge-success'>04.10.2024 12:38:37 PM</span>
+<span class='badge badge-danger'>04.10.2024 12:38:37 PM</span>
+<span class='badge badge-default'>00:00:00:254</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log fail-bg mr-2">Fail</span>Update all the Priceboard Task by Refiller from v3 endpoint</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password to get Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>979797</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.UpdatePriceboardTaskByRefellierSteps_v3.giveTheExcelFileToGetTheRequestPayloadForUpdatingPriceboadTask(java.lang.String)">
+                <span>And Give the Excel file to get the request payload for updating Priceboad task "QuickFill_TestData.xlsx"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.dmartLabs.stepdefinitions.UpdatePriceboardTaskByRefellierSteps_v3.giveTheSheetNameToGetAllThePriceboardTaskToBeUpdated(java.lang.String)">
+                <span>And Give the sheet name "UpdatePriceboardTasksByRefiller" to get all the Priceboard Task to be updated</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at com.dmartLabs.stepdefinitions.UpdatePriceboardTaskByRefellierSteps_v3.giveTheSheetNameToGetAllThePriceboardTaskToBeUpdated(UpdatePriceboardTaskByRefellierSteps_v3.java:38)
+	at ✽.Give the sheet name "UpdatePriceboardTasksByRefiller" to get all the Priceboard Task to be updated(file:///C:/Users/FD329/OneDrive/Desktop/QuickFill_ApiFramework/src/test/resources/features/SingleSuite/UpdatePriceboardTaskByRefiller_v3.feature:11)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdatePriceboardTaskByRefellierSteps_v3.requesterCallsTheUpdatePriceboardTaskVEndpointToUpdateListOfAllPriceboardTask()">
+                <span>When Requester calls the Update Priceboard Task v3 endpoint to update list of all priceboard task</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqual(java.lang.String)">
+                <span>Then Verify that status code be equal to "200"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdatePriceboardTaskByRefellierSteps_v3.checkTheResponseTimeForThePriceboardTaskUpdated()">
+                <span>And Check the response time for the Priceboard Task updated from v3 endpoint</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdatePriceboardTaskByRefellierSteps_v3.verifyThatPriceboardTaskIsUpdatedSuccessfully()">
+                <span>And Verify that priceboard task is updated successfully from v3 endpoint</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="79"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the functionality of Update Refill Task by Refiller from v3 endpoint</p>
+            <p class="text-sm">
+              <span>12:38:37 PM</span> / <span>00:00:00:259</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify the functionality of Update Refill Task by Refiller from v3 endpoint</h5>
+<span class='badge badge-success'>04.10.2024 12:38:37 PM</span>
+<span class='badge badge-danger'>04.10.2024 12:38:37 PM</span>
+<span class='badge badge-default'>00:00:00:259</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=79</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="80"><span class="badge log fail-bg mr-2">Fail</span>Update all the Refill Task by Refiller from v3 endpoint</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password to get Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>797978</td></tr><tr><td>password</td><td>Dmart@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.UpdateRefillTaskByRefillerSteps_v3.giveTheExcelFileToGetTheRequestPayloadForUpdatingRefillTask(java.lang.String)">
+                <span>And Give the Excel file to get the request payload for updating Refill task "QuickFill_TestData.xlsx"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.dmartLabs.stepdefinitions.UpdateRefillTaskByRefillerSteps_v3.giveTheSheetNameAndTheNumberOfTasksToBeUpdated(java.lang.String)">
+                <span>And Give the sheet name "UpdateRefillTasksByRefiller" to get all the Refill Task to be updated</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at com.dmartLabs.stepdefinitions.UpdateRefillTaskByRefillerSteps_v3.giveTheSheetNameAndTheNumberOfTasksToBeUpdated(UpdateRefillTaskByRefillerSteps_v3.java:38)
+	at ✽.Give the sheet name "UpdateRefillTasksByRefiller" to get all the Refill Task to be updated(file:///C:/Users/FD329/OneDrive/Desktop/QuickFill_ApiFramework/src/test/resources/features/SingleSuite/UpdateRefillTaskByRefiller_v3.feature:11)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdateRefillTaskByRefillerSteps_v3.requesterCallsTheUpdateRefillTaskSVEndpointToUpdateListOfAllRefillTask()">
+                <span>When Requester calls the Update Refill Task's v3 endpoint to update list of all refill task</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdateRefillTaskByRefillerSteps_v3.checkTheResponseTimeForTheRefillTaskUpdated()">
+                <span>And Check the response time for the Refill Task updated from v3 endpoint</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.dmartLabs.stepdefinitions.UpdateRefillTaskByRefillerSteps_v3.verifyThatRefillTaskIsUpdatedSuccessfully()">
+                <span>And Verify that refill task is updated successfully from v3 endpoint</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@Excel</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Excel</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Create multiple tasks with valid data</a>
+<div class="">
+<span class="badge badge-default">Verify the functionality of Create Task with v3 endpoint.Create multiple tasks with valid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='28'>Update all the Others Task by Refiller from v3 endpoint</a>
+<div class="">
+<span class="badge badge-default">Verify the functionality of Update Others Task by Refiller.Update all the Others Task by Refiller from v3 endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='54'>Update all the Priceboard Task by Refiller from v3 endpoint</a>
+<div class="">
+<span class="badge badge-default">Verify the functionality of Update Refill Task by Refiller.Update all the Priceboard Task by Refiller from v3 endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='79' id='80'>Update all the Refill Task by Refiller from v3 endpoint</a>
+<div class="">
+<span class="badge badge-default">Verify the functionality of Update Refill Task by Refiller from v3 endpoint.Update all the Refill Task by Refiller from v3 endpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='38'>And Give the sheet name "UpdateOthersTasksByRefiller" to get all the Others Task to be updated</a>
+<div class="">
+<span class="badge badge-default">Verify the functionality of Update Others Task by Refiller.Update all the Others Task by Refiller from v3 endpoint.And Give the sheet name "UpdateOthersTasksByRefiller" to get all the Others Task to be updated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='64'>And Give the sheet name "UpdatePriceboardTasksByRefiller" to get all the Priceboard Task to be updated</a>
+<div class="">
+<span class="badge badge-default">Verify the functionality of Update Refill Task by Refiller.Update all the Priceboard Task by Refiller from v3 endpoint.And Give the sheet name "UpdatePriceboardTasksByRefiller" to get all the Priceboard Task to be updated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='79' id='90'>And Give the sheet name "UpdateRefillTasksByRefiller" to get all the Refill Task to be updated</a>
+<div class="">
+<span class="badge badge-default">Verify the functionality of Update Refill Task by Refiller from v3 endpoint.Update all the Refill Task by Refiller from v3 endpoint.And Give the sheet name "UpdateRefillTasksByRefiller" to get all the Refill Task to be updated</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">io.restassured.path.json.exception.JsonPathException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>io.restassured.path.json.exception.JsonPathException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>When Requester call the Create Task v1 endpoint to create new tasks</a>
+<div class="">
+<span class="badge badge-default">Verify the functionality of Create Task with v3 endpoint.Create multiple tasks with valid data.When Requester call the Create Task v1 endpoint to create new tasks</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

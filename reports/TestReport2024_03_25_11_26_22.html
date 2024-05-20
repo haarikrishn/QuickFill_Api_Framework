@@ -1,0 +1,1100 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuickFill API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">QuickFill - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 25, 2024 11:26:22 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create Refill Task from v3 endpoint with valid data</p>
+            <p class="text-sm">
+              <span>11:26:22 AM</span> / <span>00:00:06:868</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Create Refill Task from v3 endpoint with valid data</h5>
+<span class='badge badge-success'>03.25.2024 11:26:22 AM</span>
+<span class='badge badge-danger'>03.25.2024 11:26:28 AM</span>
+<span class='badge badge-default'>00:00:06:868</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:22 AM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:22 AM</td>
+        <td>
+          Get the unique requestId to create Refill Task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:22 AM</td>
+        <td>
+          Get the requestAt time to created Refill Task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:22 AM</td>
+        <td>
+          Provide article details to create Refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:22 AM</td>
+        <td>
+          Provide the quantity for a Refill task to be created from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:22 AM</td>
+        <td>
+          Give requester comments for a Refill task to be created from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:22 AM</td>
+        <td>
+          Give task type for a new task to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:22 AM</td>
+        <td>
+          Requester call the Create Task v3 endpoint to create Refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:23 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:23 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=6789014, password=Dmart@12345]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:26 AM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:26 AM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJERUxJVkVSWSBQTEFOTkVSIiwiRElTUEFUQ0hFUiBQTEFOTkVSIiwiRElTUEFUQ0hFUiIsIlBJQ0sgUExBTk5FUiIsIlBJQ0tFUiIsIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMjU4NSwiaWF0IjoxNzExMzQ2MTg1LCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6IjAxZmJjODU2LTg4NDgtNGNhZi1hMmNjLWYxMjMxNzMwNDM0MiJ9.PTN87y6ls3b1Txuz5_b1-x1Vb8FfWP9yH3csoPuvIFqDOorYHQmPMh7y2SqftYAVFoqkoq8Y5quhz75csRTKUuw0BsiowaLmvu-hVOb7hMZUP-tVRRxZbmu9yDj-f_2eeS5kP-uA09GCQivU9QAmAmA-vGMZ479fiZgiDOFL4Liw_uBuNMmARSASmr0Vf5xqWBbM1-yk3PUkm3Vxpgka9lF4fbDBfal7z3EpVqwHfFUiaRLRJK08tJeG8sTWilmn3uClqEf1JI16j6ZaGag-kFbYDyvluuUe8Txx1vuQ-KJflLbYK871G7aZJDXHLjly4SpdiWMlEN99-qw6oQyKQA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTE1MTg5ODUsImlhdCI6MTcxMTM0NjE4NSwidXNlciI6IjY3ODkwMTQiLCJqdGkiOiIxMTQ0NWNhNy1kZmYwLTRhYzAtOTYwZC1iM2U0OTg0MmMyNTMifQ.hj_4PdzYQMhzXYGagC-yCTWP24GizYXmsGBrHaS42DpXW14p-9zqrdEeQBmgMoha-gaUe1e2mL1vQa8Z9d2oTuTkhXs3_faikcoxvPbaTxB_0AMwsliCcSdoBdmlLJzGf9GgHt6dRw9wF4hxL0_3TtmxZ8inh38pRmG3NslHn2C-rZiO6SAhwu460QYvksml8IJFvSmA65tN9pHcBP_NuJB-esVwy3u5RUecOeFMUuKNJ0Nh9NzVbu_-zB9cqdyKlU04s2L-kDRX2toCdcup7ZyysDcXrjM_Nhs6ffSg6gAiSWHoHvyX5leaLAeDDBJFPZ5JfpyG9is2beGKlPpGRw"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:26 AM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:27 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:27 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTQ0YTFkYTMwZTMzZDMzOTAzZTU0MjUiLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTCBSRVFVRVNURVIiLCJERUxJVkVSWSBQTEFOTkVSIiwiRElTUEFUQ0hFUiBQTEFOTkVSIiwiRElTUEFUQ0hFUiIsIlBJQ0sgUExBTk5FUiIsIlBJQ0tFUiIsIlJFRklMTCBBVURJVE9SIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMjU4NSwiaWF0IjoxNzExMzQ2MTg1LCJ1c2VyIjoiNjc4OTAxNCIsImp0aSI6IjAxZmJjODU2LTg4NDgtNGNhZi1hMmNjLWYxMjMxNzMwNDM0MiJ9.PTN87y6ls3b1Txuz5_b1-x1Vb8FfWP9yH3csoPuvIFqDOorYHQmPMh7y2SqftYAVFoqkoq8Y5quhz75csRTKUuw0BsiowaLmvu-hVOb7hMZUP-tVRRxZbmu9yDj-f_2eeS5kP-uA09GCQivU9QAmAmA-vGMZ479fiZgiDOFL4Liw_uBuNMmARSASmr0Vf5xqWBbM1-yk3PUkm3Vxpgka9lF4fbDBfal7z3EpVqwHfFUiaRLRJK08tJeG8sTWilmn3uClqEf1JI16j6ZaGag-kFbYDyvluuUe8Txx1vuQ-KJflLbYK871G7aZJDXHLjly4SpdiWMlEN99-qw6oQyKQA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:27 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:27 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"refills":[{"requestId":"1a84d16f-ea48-451e-8a8c-9a01e9a21348","requestedAt":"2024-03-25T05:56:22.103Z","articleDetails":{"articleName":"Dabur Lemon Glucoplus-C Jar(400g)","articlePrice":"820","ean":"8901207019999","categoryCode":"4","articleCode":"400020722","articleMrp":"800","uom":"BOXES","caselot":10},"requestedQuantity":15,"requesterComments":"Testing the refill task","taskType":"REFILL"}]}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Status Code for newly created Task is : 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Create Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create([
+    {
+        "requestId": "1a84d16f-ea48-451e-8a8c-9a01e9a21348",
+        "refillId": "d4be61c8-e15f-4c91-ac2c-d0fa76db5ab0",
+        "floorWalkId": "31eb038c-ce82-4e59-99a0-2a2f1a5739e1"
+    }
+]); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Response Time for newly created Task is : 1211 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Check the response time for the Refill Task created with v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          <span class='badge white-text red'>Response time Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Response Time is 1211 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Verify that Refill Task is created successfully with v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          <span class='badge white-text green'>requestId field of Refill Task is passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:28 AM</td>
+        <td>
+          Excpected requestId is 1a84d16f-ea48-451e-8a8c-9a01e9a21348 and the Actual requestId is 1a84d16f-ea48-451e-8a8c-9a01e9a21348
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Refill Task by Refiller with invalid refillId from v3 endpoint</p>
+            <p class="text-sm">
+              <span>11:26:29 AM</span> / <span>00:00:00:880</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update Refill Task by Refiller with invalid refillId from v3 endpoint</h5>
+<span class='badge badge-success'>03.25.2024 11:26:29 AM</span>
+<span class='badge badge-danger'>03.25.2024 11:26:29 AM</span>
+<span class='badge badge-default'>00:00:00:880</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Get the refillId to update refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Give the status to update the refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Provide the refill quantity for updating refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Give the comments for updating refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Requester calls the Update Refill Task's v3 endpoint to update refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=797978, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMjU4OCwiaWF0IjoxNzExMzQ2MTg4LCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiMzQwMDM2MWMtMzQyNy00NjY4LWEzN2MtMDIzN2I3MGZmZjQxIn0.jbttENpWXL5yuII0tlDQyUjkyqT2xm8ZxEa515pp4IDNf5LGnVcuiWpcxJKajG9Fhm75ppRVa7y9qmDBY6EVFB7D0hTTsIXh54l5UlL86VEov0d8By8QUO3pjV56ebFEzyV3SGxQXKCSXyb-_b6Jg6fm26S2xRnvg4BOTXIuB3Q9lvtAOO0y1mrUaQ8rOk9u7gIRO_jizMQMgpmBi2s8VCfLd45nFZJwHsxIS_py3T3In2CzDiCgcl5lcXicDmWNkZCPlv5VCpJ5PqiZm2gKjsJbBf58VlQUsF1i04-Roo-5u9QCzZoCSkzmgmTHxb3fOL5Y7LxXuzR55P8R0UFLwA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTE1MTg5ODgsImlhdCI6MTcxMTM0NjE4OCwidXNlciI6Ijc5Nzk3OCIsImp0aSI6ImE1M2NkMTVjLWJiOTItNGZiYy04YTQ3LWU4MzRmOTBkN2U1YSJ9.WHcq80K-RHWNsSjMtHXi5thhoBjF8Ur9PqQi28pb4Wrzj7l6rahqdFErpkwnyWYVV90uoa4jB-IDrMPfjgIEz_ywzlUwW-lLVj1_BM9Ll8UOc7lVNKU267NfQt9MAHxcOl6cTyBBt7Wbd8oJOcugXwEx8A_ulyoshGllpsmQH0Ywx8OJ57tAdfY1fGe_StRLBQSTxf4mz9c-2rl7qyyWnnyaVohcyKCmqZKUsaxhXMEG2ZaoEGy0lA1YGN8mx1K8ct-U_ETFxPErAaVG1Knd3Q6gaqGLcoA6bfJixt3UbrzHjInYNQD-mSoPv5DExTQr-bEqkuknnns-Ecb0ezWHCA"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMjU4OCwiaWF0IjoxNzExMzQ2MTg4LCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiMzQwMDM2MWMtMzQyNy00NjY4LWEzN2MtMDIzN2I3MGZmZjQxIn0.jbttENpWXL5yuII0tlDQyUjkyqT2xm8ZxEa515pp4IDNf5LGnVcuiWpcxJKajG9Fhm75ppRVa7y9qmDBY6EVFB7D0hTTsIXh54l5UlL86VEov0d8By8QUO3pjV56ebFEzyV3SGxQXKCSXyb-_b6Jg6fm26S2xRnvg4BOTXIuB3Q9lvtAOO0y1mrUaQ8rOk9u7gIRO_jizMQMgpmBi2s8VCfLd45nFZJwHsxIS_py3T3In2CzDiCgcl5lcXicDmWNkZCPlv5VCpJ5PqiZm2gKjsJbBf58VlQUsF1i04-Roo-5u9QCzZoCSkzmgmTHxb3fOL5Y7LxXuzR55P8R0UFLwA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"refills":[{"refillId":"","Status":"COMPLETED","refilledQuantity":15,"refillerComments":"checking the update refill task functionality"}]}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Status Code for Updated Refill Task is : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Update Refill Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "code": "QF400",
+    "msg": "Bad Request"
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Response Time for Update Refill Task is : 356 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Verify that status code be equal to 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:29 AM</td>
+        <td>
+          Expected Status Code is 400 and the Actual Status Code is 400
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="68"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Refill Task by Refiller with invalid refillId from v3 endpoint</p>
+            <p class="text-sm">
+              <span>11:26:30 AM</span> / <span>00:00:00:816</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update Refill Task by Refiller with invalid refillId from v3 endpoint</h5>
+<span class='badge badge-success'>03.25.2024 11:26:30 AM</span>
+<span class='badge badge-danger'>03.25.2024 11:26:30 AM</span>
+<span class='badge badge-default'>00:00:00:816</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=68</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Get the refillId to update refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Give the status to update the refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Provide the refill quantity for updating refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Give the comments for updating refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Requester calls the Update Refill Task's v3 endpoint to update refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=797978, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMjU4OSwiaWF0IjoxNzExMzQ2MTg5LCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiOTEwOWE5OTAtMTgwYi00ODhmLTgxZTgtZDNjNTJkNjM0MTAxIn0.JYJ6P24mrBJX6hOmWRfcMzBp171xgf5hjQpuNjn4-gCFLqQzoMdcwz0UHohqYKDhYrpkKSXX9dq93PELI3ftqeB42jaOdbgKCl6a4GfSwaxPUwJxGiZnwWaazwKrp4DoZ7LAF19XAVZ4y6b6p6C5E9z1lNhzL3WFBBrekYugHVTtQ5gCRhug_K8KS_uHP_QhhP_tpnwWg8V0q3YEFdixIxXrfDCVV2JX1Yvd15_OIHAhGYHqKlTYYZDBY7B9Qc1nUl2c8z0Z0F7Tkv_VyIWEMgTI2PHy9RkhDo4qo2zFK1T2rHH7Kuf-ZjkPMdrhQSkEIK7vVZoyINXsgdoAC0y6Cg",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTE1MTg5ODksImlhdCI6MTcxMTM0NjE4OSwidXNlciI6Ijc5Nzk3OCIsImp0aSI6ImZmN2NlZTRjLTk1MzYtNDlkNy05ZGM0LTUwOWJiNTc3OWFjZCJ9.Z2CR4hFFDOCb5BBKEot_mpYeVt3IS7Uyy5BzJ3W79H2xiiYfMOSrl-q7xTWx6AHlHnw_3_y3hwt_iAYcM50jPIdVHMiudRspV8uoiNHdH71ZtTBzuXt68KxxRQtuMMp2AlFtJi6iyWBJtGSgyT6TxbxyeJeRQ5zduwqI4EaTeQnrr22Y35OEgwbhuhdlMdyHj72_rYWpZF8AcZAuiyVgrUVrXO4tFvK0lBxdHnLCyLGLW-luNsVXNfhIA7Ilhb0ABjihfGl1yGO8aworPk_Dc3HKOHz-M5TcrKXoyOSkKeAT-X3SqMw3j7qKQDx1d72k8kRSIOrrDYD1p6DZdGtfVQ"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMjU4OSwiaWF0IjoxNzExMzQ2MTg5LCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiOTEwOWE5OTAtMTgwYi00ODhmLTgxZTgtZDNjNTJkNjM0MTAxIn0.JYJ6P24mrBJX6hOmWRfcMzBp171xgf5hjQpuNjn4-gCFLqQzoMdcwz0UHohqYKDhYrpkKSXX9dq93PELI3ftqeB42jaOdbgKCl6a4GfSwaxPUwJxGiZnwWaazwKrp4DoZ7LAF19XAVZ4y6b6p6C5E9z1lNhzL3WFBBrekYugHVTtQ5gCRhug_K8KS_uHP_QhhP_tpnwWg8V0q3YEFdixIxXrfDCVV2JX1Yvd15_OIHAhGYHqKlTYYZDBY7B9Qc1nUl2c8z0Z0F7Tkv_VyIWEMgTI2PHy9RkhDo4qo2zFK1T2rHH7Kuf-ZjkPMdrhQSkEIK7vVZoyINXsgdoAC0y6Cg]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"refills":[{"refillId":"","Status":"COMPLETED","refilledQuantity":15,"refillerComments":"checking the update refill task functionality"},{"refillId":null,"Status":"COMPLETED","refilledQuantity":15,"refillerComments":"checking the update refill task functionality"}]}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Status Code for Updated Refill Task is : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Update Refill Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "code": "QF400",
+    "msg": "Bad Request"
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Response Time for Update Refill Task is : 337 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Verify that status code be equal to 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Expected Status Code is 400 and the Actual Status Code is 400
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="93"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Refill Task by Refiller with invalid refillId from v3 endpoint</p>
+            <p class="text-sm">
+              <span>11:26:30 AM</span> / <span>00:00:00:836</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update Refill Task by Refiller with invalid refillId from v3 endpoint</h5>
+<span class='badge badge-success'>03.25.2024 11:26:30 AM</span>
+<span class='badge badge-danger'>03.25.2024 11:26:31 AM</span>
+<span class='badge badge-default'>00:00:00:836</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=93</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Give Username and Password for Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Get the refillId to update refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Give the status to update the refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Provide the refill quantity for updating refill task from v3 endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Give the comments for updating refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Requester calls the Update Refill Task's v3 endpoint to update refill task
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:30 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, username=797978, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Response is {
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMjU5MCwiaWF0IjoxNzExMzQ2MTkwLCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiN2U5MTk0NTgtYWI1MC00NTA1LTk2MDUtNWFjZDYzODA0NWEyIn0.d0BX3-cLviZ6DYKjgy6IPt9Rji2iEeg5qrHGNUSz97ez-jphztQcjCATwzY_lvS4Z9j2ic0eIu0ClV4RjNnNtIe1nMvuR-sqXxQLSJmQTFyOAqpL6l_k4ZLa-ygz-bRDqN9W8WgdTGmZiYmL8SN1RO6DYUHAsmEvoIVJ-lfN_gp7RfU5WPkaVzRO7hmcQvJvop2D2ghaHzFSoQwSAJA_IhTMAxZystYhQjNlpC4BLR_uAE59iPeLx1lriHkF27Uf-SP1hlnK5y-ArysuuywrMzVJP9LfuwnkNfNmWBdcvOLVfi2UVz4xNN2AMxphRlHA3xcG6s_N5Ntqsz3BozySfw",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTE1MTg5OTAsImlhdCI6MTcxMTM0NjE5MCwidXNlciI6Ijc5Nzk3OCIsImp0aSI6ImFlNWQ3M2FmLTE5NDgtNGE4ZC1hOGM3LTJlNTU0MGU3MzMyZSJ9.IlDiacJRACYkJFQbwEmju-kE_HXe9xccPAfibuom5NbmZtdDPYBHmjd3RYCsPaMZo8K-rpSx5_Fvw2ZFy1VgFM5CQFZQBSd2d_GGQreXcUjP1cQzJ_3K1YQUdA30pL49NDaFWK7sIXqWJ4KyP9G3uxDvotW3vXjfEJSqYeK311bZUBnkZxxMi_tUpcQv2A7SHUuSOzMGLuqCEGxC_q6r7AymD5emH50vBhGiE4o2Y4daUIBNbgenOOjXQ2dTs3CAxeGNoMx6qMjEO86z3r_Lzqk-Jscd6l5GqWybnd25VaW1VOHTzuN_56944AjG1Kf3THZjR7PlOqFVLijpjIJFUA"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Base Url is :https://canary.api.meradmart.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Headers are :[Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6ImFhYjk2ZjUxLWNkNGQtNDk1Mi1iM2U4LWM1Yzk1YTRhZTBhOSJ9.eyJzdWIiOiI2NTY5YzJlNTMwZTMzZDMzOTAzZTViZTciLCJzaXRlIjoiNDAxNyIsInJvbGVzIjpbIlJFRklMTEVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxMTQzMjU5MCwiaWF0IjoxNzExMzQ2MTkwLCJ1c2VyIjoiNzk3OTc4IiwianRpIjoiN2U5MTk0NTgtYWI1MC00NTA1LTk2MDUtNWFjZDYzODA0NWEyIn0.d0BX3-cLviZ6DYKjgy6IPt9Rji2iEeg5qrHGNUSz97ez-jphztQcjCATwzY_lvS4Z9j2ic0eIu0ClV4RjNnNtIe1nMvuR-sqXxQLSJmQTFyOAqpL6l_k4ZLa-ygz-bRDqN9W8WgdTGmZiYmL8SN1RO6DYUHAsmEvoIVJ-lfN_gp7RfU5WPkaVzRO7hmcQvJvop2D2ghaHzFSoQwSAJA_IhTMAxZystYhQjNlpC4BLR_uAE59iPeLx1lriHkF27Uf-SP1hlnK5y-ArysuuywrMzVJP9LfuwnkNfNmWBdcvOLVfi2UVz4xNN2AMxphRlHA3xcG6s_N5Ntqsz3BozySfw]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"refills":[{"refillId":"","Status":"COMPLETED","refilledQuantity":15,"refillerComments":"checking the update refill task functionality"},{"refillId":null,"Status":"COMPLETED","refilledQuantity":15,"refillerComments":"checking the update refill task functionality"},{"refillId":"888c2-685a-a5bf-4d4-654a-q67e-345d-769a-2dc38v022b3","Status":"COMPLETED","refilledQuantity":15,"refillerComments":"checking the update refill task functionality"}]}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Status Code for Updated Refill Task is : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Update Refill Task Response Payload is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "code": "QF400",
+    "msg": "Bad Request"
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Response Time for Update Refill Task is : 345 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Verify that status code be equal to 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:31 AM</td>
+        <td>
+          Expected Status Code is 400 and the Actual Status Code is 400
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 25, 2024 11:26:22 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 25, 2024 11:26:31 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'>
+<b>3</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='25%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='5%'><b>5</b> events passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> events failed,
+<b data-tooltip='%'>91</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create Refill Task from v3 endpoint with valid data":6.868,"Update Refill Task by Refiller with invalid refillId from v3 endpoint":0.88,"Update Refill Task by Refiller with invalid refillId from v3 endpoint":0.816,"Update Refill Task by Refiller with invalid refillId from v3 endpoint":0.836
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 5,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 91
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

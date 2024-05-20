@@ -1,0 +1,22 @@
+{
+  "requestId": "888c2-685a-a5bf-4d4-2dc38p022b3",
+  "priceBoards": [],
+  "requestedAt": "2023-11-15T08:37:40+05:30",
+  "articleName": "Dabur Vedic Suraksha Tea(25x1.5g)",
+  "articlePrice": "210",
+  "ean": "8901207035739",
+  "categoryCode": "4",
+  "articleCode": "400030397",
+  "articleMrp": null,
+  "uom": "BOXES",
+  "quantity": {
+    "requestedQuantity": 25
+  },
+  "comments": [
+    {
+      "by": "REFILL REQUESTER",
+      "comment": ""
+    }
+  ],
+  "task": "REFILL"
+}
